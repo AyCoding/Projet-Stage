@@ -1,1 +1,53 @@
+@import 'scss/reset';
 @import 'scss/base';
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 0 2%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #F1F1F1;
+
+    a{
+        display: flex;
+        svg {
+            margin-right: 10px;
+        }
+        &:hover {
+            fill: grey;
+            color: gray;
+            transition: .3s;
+        }
+    }
+
+    .logo {
+        flex: 1;
+    }
+
+    nav {
+
+        ul {
+            display: flex;
+            gap: 50px;
+        }
+    }
+}
+
+.hero {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.content {
+    width: 50em;
+    margin: 20px auto;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+
+svg {
+    width: 25px;
+}
