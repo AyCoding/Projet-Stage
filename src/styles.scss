@@ -36,8 +36,15 @@ header {
 }
 
 .hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
     margin: 20px 0;
+    line-height: 1.5;
+    img {
+        margin-bottom: 20px;
+    }
 }
 
 .content {
@@ -45,6 +52,18 @@ header {
     margin: 20px auto;
     letter-spacing: 1px;
     line-height: 1.5;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+
+    a {
+        color: orange;
+        text-decoration: underline;
+    }
 }
 
 

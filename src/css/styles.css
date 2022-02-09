@@ -153,8 +153,15 @@ header nav ul {
 }
 
 .hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
   margin: 20px 0;
+  line-height: 1.5;
+}
+.hero img {
+  margin-bottom: 20px;
 }
 
 .content {
@@ -162,6 +169,17 @@ header nav ul {
   margin: 20px auto;
   letter-spacing: 1px;
   line-height: 1.5;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+footer a {
+  color: orange;
+  text-decoration: underline;
 }
 
 svg {
