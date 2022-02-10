@@ -2,11 +2,11 @@
 
 ## Genèse du projet
 
-Gestionnaire de projet développer à l'origine pour ***[Ardennes Métropole](https://ardenne-metropole.fr/)***
+Gestionnaire de projet développer à l'origine pour ***<a href="https://ardenne-metropole.fr/" target="_blank">Ardennes Métropole</a>***
 
-> **[Maquette du projet](https://www.figma.com/file/oSWA3gCNDMyTJ59TfVZReQ/Maquette-Projet-Stage?node-id=18%3A2)**
-
+> ### **<a href="https://www.figma.com/file/oSWA3gCNDMyTJ59TfVZReQ/Maquette-Projet-Stage?node-id=18%3A2" target="_blank">Maquette du projet</a>**
 ___
+<br>
 
 ## Langages utilisée
 
@@ -17,6 +17,8 @@ ___
 * JS - ***JavaScript***
 
 * PHP - ***Hypertext Preprocessor***
+
+<br>
 
 # Installation
 
