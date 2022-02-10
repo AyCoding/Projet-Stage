@@ -124,6 +124,10 @@ h3 {
   font-size: 20px;
 }
 
+body {
+  position: relative;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -132,6 +136,7 @@ header {
   font-size: 20px;
   font-weight: 700;
   background-color: #F1F1F1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 header a {
   display: flex;
@@ -164,11 +169,40 @@ header nav ul {
   margin-bottom: 20px;
 }
 
-.content {
-  width: 50em;
-  margin: 20px auto;
-  letter-spacing: 1px;
-  line-height: 1.5;
+.container {
+  display: flex;
+}
+.container section {
+  width: 50%;
+}
+.container section:nth-child(1) div {
+  background-color: blue;
+}
+.container section:nth-child(2) div {
+  background-color: red;
+}
+.container section:nth-child(1) article {
+  background-color: rgba(0, 0, 255, 0.2);
+}
+.container section:nth-child(2) article {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+.container section div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  font-size: 30px;
+  font-weight: 900;
+  color: #FFF;
+}
+.container section article {
+  height: auto;
+  padding-bottom: 5%;
+}
+.container section article li {
+  padding: 10px;
 }
 
 footer {
@@ -176,6 +210,8 @@ footer {
   justify-content: center;
   align-items: center;
   height: 50px;
+  background-color: #333;
+  color: #FFF;
 }
 footer a {
   color: orange;

@@ -1,6 +1,10 @@
 @import 'scss/reset';
 @import 'scss/base';
 
+body {
+    position: relative;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -9,6 +13,7 @@ header {
     font-size: 20px;
     font-weight: 700;
     background-color: #F1F1F1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
     a{
         display: flex;
@@ -47,18 +52,51 @@ header {
     }
 }
 
-.content {
-    width: 50em;
-    margin: 20px auto;
-    letter-spacing: 1px;
-    line-height: 1.5;
+.container {
+    display: flex;
+
+    section {
+        width: 50%;
+
+        &:nth-child(1) div {background-color: blue;}
+        &:nth-child(2) div {background-color: red;}
+
+        &:nth-child(1) article {background-color: rgba(blue, .2);}
+        &:nth-child(2) article {background-color: rgba(red, .2);}
+        
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100px;
+            font-size: 30px;
+            font-weight: 900;
+            color: #FFF;
+        }
+
+        article {
+            height: auto;
+            padding-bottom: 5%;
+
+            li {
+                padding: 10px;
+            }
+        }
+
+        
+    }
 }
+
 
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50px;
+    background-color: #333;
+    color: #FFF;
+    // font-size: 20px;
 
     a {
         color: orange;
