@@ -2,9 +2,9 @@
 
 ## Genèse du projet
 
-Gestionnaire de projet développer à l'origine pour ***Ardennes Métropole***
+Gestionnaire de projet développer à l'origine pour ***[Ardennes Métropole](https://ardenne-metropole.fr/)***
 
-[Maquettes du projets](https://www.figma.com/file/oSWA3gCNDMyTJ59TfVZReQ/Maquettes-Projet-Stage?node-id=18%3A2)
+> **[Maquette du projet](https://www.figma.com/file/oSWA3gCNDMyTJ59TfVZReQ/Maquette-Projet-Stage?node-id=18%3A2)**
 
 ___
 
