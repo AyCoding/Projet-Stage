@@ -98,19 +98,52 @@ header {
             
             
 
-            div {
+            .title {
+                position: relative;
                 width: 80%;
                 margin: auto;
-                text-align: center;
+                // text-align: center;
                 // background-color: #111222;
+                margin-bottom: 50px;
 
                 h3 {
-                    padding: 10px;
-                }
+                    // position: relative;
+                    padding: 20px 0;
+                    
+                    &::after {
+                        content: '';
+                        display: inline-block;
+                        background-image: url(../../assets/arrow-down-s-line.svg);
+                        width: 25px;
+                        height: 25px;
+                        position: absolute;
+                        right: 0;
+                        cursor: pointer;
+                    }
 
-                &.title {
-                    margin-bottom: 50px;
                 }
+                .title__wrapper {
+                    background-color: #F1F1F1;
+                    border-radius: 10px;
+                    left: 0;
+                    width: 100%;
+                    margin-bottom: $line-height;
+                    padding: 20px;
+                    padding-left: 10px;
+
+                    .task__adds {
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: orange;
+                        width: 200px;
+                        height: 50px;
+                        border-radius: 25px;
+                        color: #FFF;
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        cursor: pointer;
+                    }
+            }
 
                 // PROGRESS LINE
                 .line {

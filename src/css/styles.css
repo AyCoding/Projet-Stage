@@ -199,28 +199,57 @@ header nav ul {
 .header__task .content section.active {
   display: block;
 }
-.header__task .content section div {
+.header__task .content section .title {
+  position: relative;
   width: 80%;
   margin: auto;
-  text-align: center;
-}
-.header__task .content section div h3 {
-  padding: 10px;
-}
-.header__task .content section div.title {
   margin-bottom: 50px;
 }
-.header__task .content section div .line {
+.header__task .content section .title h3 {
+  padding: 20px 0;
+}
+.header__task .content section .title h3::after {
+  content: "";
+  display: inline-block;
+  background-image: url(../../assets/arrow-down-s-line.svg);
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+.header__task .content section .title .title__wrapper {
+  background-color: #F1F1F1;
+  border-radius: 10px;
+  left: 0;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 20px;
+  padding-left: 10px;
+}
+.header__task .content section .title .title__wrapper .task__adds {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  color: #FFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.header__task .content section .title .line {
   position: relative;
 }
-.header__task .content section div .line .line-main {
+.header__task .content section .title .line .line-main {
   position: absolute;
   border-radius: 25px;
   background-color: #ccc;
   width: 100%;
   height: 10px;
 }
-.header__task .content section div .line .line-progress {
+.header__task .content section .title .line .line-progress {
   position: absolute;
   border-radius: 25px;
   background-color: #008000;
