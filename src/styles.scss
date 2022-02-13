@@ -1,19 +1,24 @@
 @import 'scss/reset';
 @import 'scss/base';
 
+$line-height: 10px;
+
 body {
     position: relative;
 }
 
 header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 0 2%;
-    height: 50px;
+    height: 70px;
     font-size: 20px;
     font-weight: 700;
     background-color: #F1F1F1;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
+    letter-spacing: 1px;
 
     a{
         display: flex;
@@ -27,9 +32,9 @@ header {
         }
     }
 
-    .logo {
-        flex: 1;
-    }
+    // .logo {
+    //     flex: 1;
+    // }
 
     nav {
 
@@ -52,48 +57,93 @@ header {
     }
 }
 
-.container {
-    display: flex;
+.header__task {
 
-    section {
-        width: 50%;
-
-        &:nth-child(1) div {background-color: blue;}
-        &:nth-child(2) div {background-color: red;}
-
-        &:nth-child(1) article {background-color: rgba(blue, .2);}
-        &:nth-child(2) article {background-color: rgba(red, .2);}
+    .header__title {
+        display: flex;
         
-        div {
+        h2 {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 100%;
-            height: 100px;
-            font-size: 30px;
-            font-weight: 900;
-            color: #FFF;
-        }
+            width: 50%;
+            height: 70px;
+            cursor: pointer;
 
-        article {
-            height: auto;
-            padding-bottom: 5%;
-
-            li {
-                padding: 10px;
+            &.active {
+                background-color: #111222;
+                color: #FFF;
             }
         }
+    }
 
+    .content {
         
+        section {
+            width: 100%;
+            height: auto;
+            padding: 25px 0;
+            background-color: #fddfdf;
+            display: none;
+            
+            &:nth-child(2) {
+                background-color: rgba(blue, .5);
+                color: #FFF;
+                display: none;
+            }
+
+            &.active {
+                display: block;
+            }
+            
+            
+
+            div {
+                width: 80%;
+                margin: auto;
+                text-align: center;
+                // background-color: #111222;
+
+                h3 {
+                    padding: 10px;
+                }
+
+                &.title {
+                    margin-bottom: 50px;
+                }
+
+                // PROGRESS LINE
+                .line {
+                  position: relative;
+                  
+                    .line-main {
+                        position: absolute;
+                        border-radius: 25px;
+                        background-color: #ccc;
+                        width: 100%;
+                        height: $line-height;
+                    }
+                    
+                    .line-progress {
+                        position: absolute;
+                        border-radius: 25px;
+                        background-color: #008000;
+                        width: 50%;
+                        height: $line-height;
+                    }
+                }
+            }
+        }
     }
 }
+
 
 
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
+    height: 40px;
     background-color: #333;
     color: #FFF;
     // font-size: 20px;
@@ -106,5 +156,5 @@ footer {
 
 
 svg {
-    width: 25px;
+    width: 20px;
 }
