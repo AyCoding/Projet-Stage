@@ -13,12 +13,11 @@ header {
     align-items: center;
     padding: 0 2%;
     height: 70px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
-    background-color: #F1F1F1;
+    background-color: #fdfdfd;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-transform: uppercase;
-    letter-spacing: 1px;
 
     a{
         display: flex;
@@ -78,7 +77,7 @@ header {
     }
 
     .content {
-        
+
         section {
             width: 100%;
             height: auto;
@@ -106,9 +105,10 @@ header {
                 // background-color: #111222;
                 margin-bottom: 50px;
 
-                h3 {
+                .title__task {
                     // position: relative;
                     padding: 20px 0;
+                    cursor: pointer;
                     
                     &::after {
                         content: '';
@@ -118,7 +118,7 @@ header {
                         height: 25px;
                         position: absolute;
                         right: 0;
-                        cursor: pointer;
+                        // transform: rotate(180deg);
                     }
 
                 }
@@ -130,13 +130,18 @@ header {
                     margin-bottom: $line-height;
                     padding: 20px;
                     padding-left: 10px;
+                    display: none;
 
+                    &.active {
+                        display: block;
+                    }
+                    
                     .task__adds {
                         display: inline-flex;
                         justify-content: center;
                         align-items: center;
                         background-color: orange;
-                        width: 200px;
+                        width: 300px;
                         height: 50px;
                         border-radius: 25px;
                         color: #FFF;
