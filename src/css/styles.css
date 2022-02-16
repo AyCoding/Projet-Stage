@@ -180,8 +180,7 @@ header nav ul {
   cursor: pointer;
 }
 .header__task .header__title h2.active {
-  background-color: #111222;
-  color: #FFF;
+  border-bottom: 5px solid orange;
 }
 .header__task .content section {
   width: 100%;
