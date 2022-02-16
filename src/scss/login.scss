@@ -1,0 +1,44 @@
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#333, .1);
+}
+
+.login__form {
+    position: absolute;
+    top: 200px;
+    left: 40%;
+    width: auto;
+    height: auto;
+    padding: 5%;
+    background-color: #FDFDFD;
+    border-radius: 10px;
+
+    h1 {
+        margin-bottom: 30px;
+    }
+
+    label {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    input {
+        width: 100%;
+        margin: 10px 0;        
+        border: 1px solid rgba(#333, .5);
+        padding: 5px;
+        border-radius: 5px;
+        &#submit {
+            background-color: #333;
+            color: #FDFDFD;
+            margin-top: 2em;
+            
+            &:hover{
+                background-color: rgba(#333, .5);
+                transition: .3s;
+            }
+        }
+    }
+}
