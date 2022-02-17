@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" class=".html">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,27 +8,24 @@
     <link rel="stylesheet" href="src/css/styles.css">
     <title>Login - Ardennes Métropole</title>
 </head>
-<body class="body">
-
-<!-- <div class="login__content"> -->
+<body>
 
     <div class="login__form">
         <h1>Se Connecter
             <img src="assets/ardenne.png" alt="">
         </h1>
         
-        <form action=""> 
+        <form action="" method="post"> 
             <!-- <label for="name">Identifiant</label> -->
-            <input type="text" name="name" id="name" required placeholder="Saisir l'identifiant">
+            <input type="text" name="pseudo" id="pseudo" required placeholder="Saisir l'identifiant">
 
             <!-- <label for="password">Mot de passe</label> -->
-            <input type="password" name="password" id="password" required placeholder="Saisir le mot de passe">
+            <input type="password" name="motdepasse" id="password" required placeholder="Saisir le mot de passe">
 
-            <input type="submit" id="submit" value="Se Connecter !">
+            <button type="submit" id="submit">Se Connecter</button>
 
         </form>
     </div>
-<!-- </div> -->
 
 </body>
 </html>

@@ -1,5 +1,27 @@
+<?php
+// $pseudo = $_POST['pseudo'];
+
+// $pass = $_POST['motdepasse'];
+
+// if ($pseudo === 'John' && $pass === 'Doe') {
+
+//     session_start();
+
+//     $_SESSION['connecte'] = 1;
+
+//     // header('Location: /dashboard.php');
+
+//     exit();
+
+// } else {
+
+//     $error = "Identifiants incorrects !";
+
+// }
+?>
+
 <!DOCTYPE html>
-<html lang="fr" class=".html">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,27 +30,30 @@
     <link rel="stylesheet" href="src/css/styles.css">
     <title>Login - Ardennes Métropole</title>
 </head>
-<body class="body">
-
-<!-- <div class="login__content"> -->
-
+<body>
+    
     <div class="login__form">
         <h1>Se Connecter
             <img src="assets/ardenne.png" alt="">
         </h1>
         
-        <form action=""> 
-            <!-- <label for="name">Identifiant</label> -->
-            <input type="text" name="name" id="name" required placeholder="Saisir l'identifiant">
+        <form action="" method="post">
 
-            <!-- <label for="password">Mot de passe</label> -->
-            <input type="password" name="password" id="password" required placeholder="Saisir le mot de passe">
+            <div class="form__group">
+                <input type="text" name="pseudo" id="pseudo" required placeholder="Saisir l'identifiant">
+            </div>
+            
+            <div class="form__group">
+                <input type="password" name="motdepasse" id="password" required placeholder="Saisir le mot de passe">
+            </div>
 
-            <input type="submit" id="submit" value="Se Connecter !">
+            <div class="form__group form__last">
+                <button type="submit" id="submit">Se Connecter</button>
+            </div>
+
 
         </form>
     </div>
-<!-- </div> -->
 
 </body>
 </html>

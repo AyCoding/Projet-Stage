@@ -151,12 +151,17 @@ h3 {
   padding: 5px;
   border-radius: 5px;
 }
-.login__form input#submit {
+.login__form form #submit {
   background-color: #333;
   color: #FDFDFD;
   margin-top: 2em;
+  width: 100%;
+  margin: 10px 0;
+  border: 1px solid rgba(51, 51, 51, 0.5);
+  padding: 5px;
+  border-radius: 5px;
 }
-.login__form input#submit:hover {
+.login__form form #submit:hover {
   background-color: rgba(51, 51, 51, 0.5);
   transition: 0.3s;
 }
@@ -293,7 +298,6 @@ header nav ul {
   position: absolute;
   border-radius: 25px;
   background-color: #008000;
-  width: 50%;
   height: 10px;
 }
 
