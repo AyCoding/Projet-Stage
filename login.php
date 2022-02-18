@@ -1,23 +1,36 @@
 <?php
-// $pseudo = $_POST['pseudo'];
 
-// $pass = $_POST['motdepasse'];
+$error = null;
 
-// if ($pseudo === 'John' && $pass === 'Doe') {
+if (!empty($_POST['pseudo']) && !empty($_POST['motdepasse'])) {
 
-//     session_start();
+    $pseudo = $_POST['pseudo'];
+    
+    $pass = $_POST['motdepasse'];
 
-//     $_SESSION['connecte'] = 1;
+    if ($pseudo === 'John' && $pass === 'Doe') {
 
-//     // header('Location: /dashboard.php');
+        session_start();
 
+        $_SESSION['connecte'] = 1;
+
+        header('Location: /index.php');
+
+        exit();
+
+    } else {
+
+        $error = "Identifiants incorrects !";
+
+    }
+}
+
+require 'php/auth.php';
+// if (est_connecte()) {
+//     header('Location: /index.php');
 //     exit();
-
-// } else {
-
-//     $error = "Identifiants incorrects !";
-
 // }
+
 ?>
 
 <!DOCTYPE html>
@@ -37,7 +50,7 @@
             <img src="assets/ardenne.png" alt="">
         </h1>
         
-        <form action="" method="post">
+        <form action="" method="POST">
 
             <div class="form__group">
                 <input type="text" name="pseudo" id="pseudo" required placeholder="Saisir l'identifiant">
@@ -51,12 +64,18 @@
                 <button type="submit" id="submit">Se Connecter</button>
             </div>
 
+            <?php if ($error): ?>
+                <div class="alert">
+                    <?= $error ?>
+                </div>
+                <?php endif ?>
 
         </form>
     </div>
 
 </body>
 </html>
+
 <style>
     html,
     body {
@@ -65,5 +84,15 @@
     background-color: rgba(51, 51, 51, .1);
     display: flex;
     vertical-align: middle;
+}
+
+.alert {
+    background-color: red;
+    color: #FFF;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 </style>

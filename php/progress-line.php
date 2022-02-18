@@ -1,13 +1,13 @@
 <?php 
-$data = '10%'
+$data = '38%';
+$numberTask = 2;
 ?>
 <div class="line">
-    <div class="line-main"></div>
-    <div class="line-progress"></div>
-</div>
+                        <div class="line-main"></div>
+                        <div class="line-progress"></div>
+                      </div>
 
 <style>
     .line-progress {
-<?php        echo "width: $data;"; ?>
-    }
+<?php        echo "\t\twidth: $data;\t\n}"; ?>
 </style>

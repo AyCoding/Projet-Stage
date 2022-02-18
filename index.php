@@ -1,3 +1,8 @@
+<?php 
+require "php/auth.php";
+forcer_utilisateur_connecte();
+?>
+
 <html>
     <head>
 
@@ -8,10 +13,12 @@
         <title>Gestion des projets - Ardennes Métropole</title>
     </head>
     <body>
-        <?php 
-          include("./php/header.php");
-          include("./php/tasks.php"); 
-          include("./php/footer.php"); 
-        ?>
+
+        <?php include("php/header.php"); ?>
+        
+        <?php include("php/tasks.php"); ?>
+        
+        <?php include("php/footer.php"); ?>
+    
     </body>
 </html>
