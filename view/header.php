@@ -1,3 +1,6 @@
+<?php
+// require_once "php/auth.php";
+?>
 <header>
     <div class="logo">
         <a href="index.php">Gestion des projets</a>

@@ -1,6 +1,7 @@
-<?php 
+<?php
 require_once "php/auth.php";
-// forcer_utilisateur_connecte();
+est_connecte();
+forcer_utilisateur_connecte();
 ?>
 
 <html>
@@ -14,7 +15,7 @@ require_once "php/auth.php";
     <body>
 
 
-<?php include("php/header.php"); ?>
+<?php include("view/header.php"); ?>
 
     <div class="header__task">
             <div class="header__title">
@@ -92,6 +93,6 @@ require_once "php/auth.php";
             </div>
         </div>
                 
-    <?php include("php/footer.php"); ?>
+    <?php include("view/footer.php"); ?>
     </body>
 </html>

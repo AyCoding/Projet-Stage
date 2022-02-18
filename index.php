@@ -1,5 +1,6 @@
 <?php 
 require_once "php/auth.php";
+est_connecte();
 ?>
 
 <html>
@@ -13,7 +14,7 @@ require_once "php/auth.php";
     </head>
     <body>
 
-        <?php include("php/header.php"); ?>
+        <?php include("view/header.php"); ?>
     
     </body>
 </html>

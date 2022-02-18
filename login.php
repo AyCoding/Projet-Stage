@@ -26,7 +26,7 @@ if (!empty($_POST['pseudo']) && !empty($_POST['motdepasse'])) {
 }
 
 
-require_once 'php/auth.php';
+require 'php/auth.php';
 if (est_connecte()) {
     header('Location: /tasks.php');
     exit();
@@ -87,7 +87,7 @@ if (est_connecte()) {
 }
 
 .alert {
-    background-color: red;
+    background-color: rgba(255, 0 , 0, .5);
     color: #FFF;
     width: 100%;
     height: 50px;
