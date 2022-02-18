@@ -6,15 +6,15 @@ if (!empty($_POST['pseudo']) && !empty($_POST['motdepasse'])) {
 
     $pseudo = $_POST['pseudo'];
     
-    $pass = $_POST['motdepasse'];
+    $password = $_POST['motdepasse'];
     
-    if ($pseudo === 'John' && $pass === 'Doe') {
+    if ($pseudo === 'John' && $password === 'Doe') {
 
         session_start();
 
         $_SESSION['connecte'] = 1;
         
-        header('Location: /tasks.php');
+        header('Location: /');
 
         exit();
         
@@ -28,7 +28,7 @@ if (!empty($_POST['pseudo']) && !empty($_POST['motdepasse'])) {
 
 require 'php/auth.php';
 if (est_connecte()) {
-    header('Location: /tasks.php');
+    header('Location: /');
     exit();
 }
 ?>

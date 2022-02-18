@@ -15,6 +15,10 @@ est_connecte();
     <body>
 
         <?php include("view/header.php"); ?>
+        <?php if (est_connecte()): ?>
+            <?= include("tasks.php") ?>
+        
+        <?php endif ?>
     
     </body>
 </html>

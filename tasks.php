@@ -14,9 +14,6 @@ forcer_utilisateur_connecte();
     </head>
     <body>
 
-
-<?php include("view/header.php"); ?>
-
     <div class="header__task">
             <div class="header__title">
                 <h2 class="active">Projets en cours</h2>
