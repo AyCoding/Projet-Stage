@@ -1,11 +1,11 @@
 <header>
     <div class="logo">
-        <a href="#">Gestion des projets</a>
+        <a href="index.php">Gestion des projets</a>
     </div>
     <nav>
         <ul>
                 <?php if (est_connecte()): ?>
-                <a href="login.php">
+                <a href="logout.php">
                     Se déconnecter
                 </a>
                 <?php else: ?>

@@ -1,6 +1,5 @@
 <?php 
-require "php/auth.php";
-forcer_utilisateur_connecte();
+require_once "php/auth.php";
 ?>
 
 <html>
@@ -15,10 +14,6 @@ forcer_utilisateur_connecte();
     <body>
 
         <?php include("php/header.php"); ?>
-        
-        <?php include("php/tasks.php"); ?>
-        
-        <?php include("php/footer.php"); ?>
     
     </body>
 </html>

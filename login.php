@@ -7,30 +7,30 @@ if (!empty($_POST['pseudo']) && !empty($_POST['motdepasse'])) {
     $pseudo = $_POST['pseudo'];
     
     $pass = $_POST['motdepasse'];
-
+    
     if ($pseudo === 'John' && $pass === 'Doe') {
 
         session_start();
 
         $_SESSION['connecte'] = 1;
-
-        header('Location: /index.php');
+        
+        header('Location: /tasks.php');
 
         exit();
-
+        
     } else {
 
         $error = "Identifiants incorrects !";
-
+        
     }
 }
 
-require 'php/auth.php';
-// if (est_connecte()) {
-//     header('Location: /index.php');
-//     exit();
-// }
 
+require_once 'php/auth.php';
+if (est_connecte()) {
+    header('Location: /tasks.php');
+    exit();
+}
 ?>
 
 <!DOCTYPE html>
