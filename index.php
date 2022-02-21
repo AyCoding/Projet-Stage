@@ -1,8 +1,8 @@
+<?php session_start(); ?>
 <?php 
 require_once "php/auth.php";
 est_connecte();
 ?>
-
 <html>
     <head>
 
