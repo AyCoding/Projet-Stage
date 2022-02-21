@@ -3,7 +3,8 @@ $title = "Verification";
 $task = [
     "Zone B14",
     "Zone D14",
-    "Section A80"
+    "Section A80",
+    "Inventaire Informatique"
 ]
 ?>
 

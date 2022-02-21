@@ -28,6 +28,9 @@
                 </div>
             </form>
         </div>
+        <aside>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"/></svg>
+        </aside>
     </div>
 </body>
 </html>
@@ -48,22 +51,45 @@
         max-width: 90%;
         height: auto;
         max-height: 90%;
-        background-color: #333;
         margin: auto;
-        border-radius: 25px;
+        display: flex;
     }
-
+    
     .modal__content {
         background-color: orange;
         width: 90%;
         height: 100%;
         padding: 5%;
+        border-radius: 25px 0px 25px 25px;
     }
-
+    
     .modal__content h1 {
         padding: 5%;
     }
     
+    
+    aside {
+        background-color: #333;
+        width: 10%;
+        border-radius: 0 50px 50px 0;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    aside svg {
+        width: 100%;
+        margin-bottom: -5px;
+        margin-left: -5px;
+        fill: #fdfdfd;
+    }
+
+    aside:hover {
+        transition: .3s;
+        background-color: rgba(200, 0, 0, 1);
+        cursor: pointer;
+    }
 
 
     .form__group * {

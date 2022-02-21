@@ -38,6 +38,9 @@ if (isset($_POST['submit'])) {
         $req = $db->prepare($sql);
         $req->execute();
         echo "Enregistrement effectuée";
+
+        $_SESSION['connecte'] = 1;
+        header('Location: /');
     } 
 }
 ?>
