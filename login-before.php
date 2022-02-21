@@ -1,6 +1,37 @@
-<?php session_start(); ?>
-<?php $error = "Nop"; ?>
+<?php
 
+$error = null;
+
+if (!empty($_POST['pseudo']) && !empty($_POST['motdepasse'])) {
+
+    $pseudo = $_POST['pseudo'];
+    
+    $password = $_POST['motdepasse'];
+    
+    if ($pseudo === 'John' && $password === 'Doe') {
+
+        session_start();
+
+        $_SESSION['connecte'] = 1;
+        
+        header('Location: /');
+
+        exit();
+        
+    } else {
+
+        $error = "Identifiants incorrects !";
+        
+    }
+}
+
+
+require 'php/auth.php';
+if (est_connecte()) {
+    header('Location: /');
+    exit();
+}
+?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -19,18 +50,18 @@
             <img src="assets/ardenne.png" alt="">
         </h1>
         
-        <form method="POST" action="log.php">
+        <form action="" method="POST">
 
             <div class="form__group">
-                <input type="email" name="email" id="pseudo" required placeholder="Saisir l'identifiant">
+                <input type="text" name="pseudo" id="pseudo" required placeholder="Saisir l'identifiant">
             </div>
             
             <div class="form__group">
-                <input type="password" name="pass" id="password" required placeholder="Saisir le mot de passe">
+                <input type="password" name="motdepasse" id="password" required placeholder="Saisir le mot de passe">
             </div>
 
             <div class="form__group form__last">
-                <button type="submit" name="submit" id="submit">Se Connecter</button>
+                <button type="submit" id="submit">Se Connecter</button>
             </div>
 
             <?php if ($error): ?>
