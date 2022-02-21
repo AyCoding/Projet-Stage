@@ -1,5 +1,5 @@
 <?php session_start(); ?>
-<?php $error = "Nop"; ?>
+<?php $error = null; ?>
 
 
 <!DOCTYPE html>

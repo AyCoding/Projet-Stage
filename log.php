@@ -30,6 +30,7 @@ if (isset($_POST['submit'])) {
 
         } else {
             $error = "Identifiants incorrects !";
+            echo $error;
         }
     }
 
@@ -45,3 +46,15 @@ if (isset($_POST['submit'])) {
 
 require 'php/auth.php'
 ?>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap');
+
+
+    * {
+        font-size: 30px;
+        font-weight: 700;
+        font-family: 'Montserrat',sans-serif;
+    }
+</style>
