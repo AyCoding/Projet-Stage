@@ -17,7 +17,7 @@ est_connecte();
         <?php include("view/header.php"); ?>
         <?php if (est_connecte()): ?>
             <?= include("tasks.php") ?>
-        
+            <?= include("modal.php") ?>
         <?php endif ?>
     
     </body>

@@ -37,21 +37,27 @@
 
 <style>
 
-    html,
-    body {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(51, 51, 51, .1);
-    display: flex;
-    vertical-align: middle;
+body {
+        /* background-color: #333333d3; */
+        position: relative;
     }
 
+
     .modal {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         width: 100%;
         max-width: 90%;
         height: auto;
         max-height: 90%;
         margin: auto;
+        display: flex;
+        display: none;
+    }
+
+    .modal.active {
         display: flex;
     }
     
