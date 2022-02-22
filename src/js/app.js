@@ -1,6 +1,5 @@
-const task_title = document.querySelectorAll('h2');
+const task_title = document.querySelectorAll('.title__project');
 const task_list = document.querySelectorAll('section');
-
 // Pour ouvrir les contenus des tâches
 function toggleTask () {
     
@@ -41,12 +40,15 @@ for (let i = 0; i < task_title.length; i++) {
 
 }
 
+const addingTasks = document.querySelector('.add__project');
+const modal = document.querySelector('.modal');
+
 function addTasks () {
     
-    const addingTasks = document.querySelector('.add__project');
-    console.log(addingTasks);
-    const modal = document.querySelector('.modal');
-    console.log(modal);
+    // const addingTasks = document.querySelector('.add__project');
+    // console.log(addingTasks);
+    // const modal = document.querySelector('.modal');
+    // console.log(modal);
 
     // for (let j = 0; j < addingTasks.length; j++) {
         // console.log(addingTasks[j]);
@@ -64,5 +66,4 @@ function addTasks () {
         modal.classList.remove('active');
     })
 }
-
 addTasks();

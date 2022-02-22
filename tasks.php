@@ -16,13 +16,15 @@ forcer_utilisateur_connecte();
 
     <div class="header__task">
             <div class="header__title">
-                <h2 class="active">Projets en cours</h2>
-                <h2 class="">Projets finis</h2>
+                <h2 class="title__project active">Projets en cours</h2>
+                <h2 class="title__project">Projets finis</h2>
             </div>
 
             <div class="content">
                 <section class="active">
-                    <h2 class="add__project">Ajout d'un projet</h2>
+                    <div class="add__project">
+                        <h2>Ajout d'un projet</h2>
+                    </div>
                     <div class="title">
                         <h3 class="title__task">Installation raccordements eau - Commune Neufmanil
                         </h3>
@@ -100,10 +102,17 @@ forcer_utilisateur_connecte();
         justify-content: center;
         align-items: center;
         margin: auto;
-        width: 100%;
+        width: 50%;
         height: 50px;
         background-color: orange;
         color: #FFF;
+        cursor: pointer;
+        border-radius: 25px;
+    }
+
+    .add_project:hover {
+        transition: .3s;
+        background-color: rgba(200, 0, 0, 1);
         cursor: pointer;
     }
 </style>
