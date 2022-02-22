@@ -20,5 +20,7 @@ est_connecte();
             <?= include("modal.php") ?>
         <?php endif ?>
     
+    <script src="src/js/app.js"></script>
+
     </body>
 </html>
