@@ -19,7 +19,11 @@ if ($data == null) {
     ];
 }
 
-// echo count($data[0]);
+// echo $data[1]['title'];
+for ($j=0; $j < count($data) ; $j++) { 
+    # code...
+    echo $data[$j]['title'];
+}
 // $test = array($title, $task[0])
 ?>
 <meta charset="UTF-8">
