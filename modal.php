@@ -1,7 +1,7 @@
-    <div class="modal">
+   <div class="modal">
         <div class="modal__content">
             <h1>Ajout d'un projet</h1>
-            <form action="#">
+            <form action="controller/traitementProjet.php" method="POST">
 
                 <div class="form__group">
                     <input type="text" name="title" id="title" placeholder="Titre du projet" required>
@@ -10,7 +10,7 @@
                     <input type="text" name="task" id="task" placeholder="Tâches" required>
                 </div>
                 <div class="form__group">
-                    <input type="text" name="task" id="task" placeholder="Tâches">
+                    <input type="text" name="task1" id="task" placeholder="Tâches 2">
                 </div>
 
                 <div class="form__group form__last">
