@@ -7,7 +7,7 @@ if (isset($_POST['submit'])) {
     $email = $_POST['email'];
     $pass = $_POST['pass'];
 
-    $db = new PDO('mysql:host=localhost;dbname=loginsystem', 'root', '');
+    $db = new PDO('mysql:host=localhost;dbname=loginsystem;charset=UTF8;', 'root', '');
 
     $sql = "SELECT * FROM user WHERE email = '$email'; ";
     $result = $db->prepare($sql);

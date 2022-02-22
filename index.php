@@ -24,3 +24,7 @@ est_connecte();
 
     </body>
 </html>
+
+<style>
+    svg {fill:#333;}
+</style>

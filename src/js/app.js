@@ -43,18 +43,19 @@ for (let i = 0; i < task_title.length; i++) {
 
 function addTasks () {
     
-    const addingTasks = document.querySelectorAll('.task__adds');
+    const addingTasks = document.querySelector('.add__project');
+    console.log(addingTasks);
     const modal = document.querySelector('.modal');
     console.log(modal);
 
-    for (let j = 0; j < addingTasks.length; j++) {
+    // for (let j = 0; j < addingTasks.length; j++) {
         // console.log(addingTasks[j]);
 
-        addingTasks[j].addEventListener('click', () => {
+        addingTasks.addEventListener('click', () => {
             modal.classList.toggle('active')
         })
         
-    }
+    // }
     
     const aside = document.querySelector('aside');
     // console.log(aside);

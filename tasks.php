@@ -22,6 +22,7 @@ forcer_utilisateur_connecte();
 
             <div class="content">
                 <section class="active">
+                    <h2 class="add__project">Ajout d'un projet</h2>
                     <div class="title">
                         <h3 class="title__task">Installation raccordements eau - Commune Neufmanil
                         </h3>
@@ -93,3 +94,16 @@ forcer_utilisateur_connecte();
     <?php include("view/footer.php"); ?>
     </body>
 </html>
+<style>
+    .add__project {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 100%;
+        height: 50px;
+        background-color: orange;
+        color: #FFF;
+        cursor: pointer;
+    }
+</style>
