@@ -2,8 +2,6 @@
 <br>
 
 ## Genèse du projet
-___
-<br>
 
 Gestionnaire de projet développer à l'origine pour ***<a href="https://ardenne-metropole.fr/" target="_blank">Ardennes Métropole</a>***
 
