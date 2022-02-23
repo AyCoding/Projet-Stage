@@ -55,8 +55,7 @@ forcer_utilisateur_connecte();
 
 
                     </div>
-
-                    <?php include("php/test.php") ?>
+                        <?php include("php/test.php") ?>
                 </section>
 
                 <section class="">
