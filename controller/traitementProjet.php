@@ -15,7 +15,7 @@ if (isset($_POST['submit'])) {
     $sql = "INSERT INTO taskslists (title, task, task1) VALUES ('$title','$tasks', '$tasks1')";
     $req = $db->prepare($sql);
     $req->execute();
-    echo "Enregistrement effectuée";
+    // echo "Enregistrement effectuée";
 }
 
 ?>

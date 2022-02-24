@@ -1,7 +1,7 @@
    <div class="modal">
         <div class="modal__content">
             <h1>Ajout d'un projet</h1>
-            <form action="controller/traitementProjet.php" method="POST">
+            <form action="/" method="POST">
 
                 <div class="form__group">
                     <input type="text" name="title" id="title" placeholder="Titre du projet" required>
