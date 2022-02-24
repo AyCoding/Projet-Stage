@@ -12,12 +12,20 @@ if ($data == null) {
 
 } else {
     $title =  $data[0]['title'];
+    $title2 =  $data[1]['title'];
 
     $task = [
         $data[0]['task'],
         $data[0]['task1']
     ];
 }
+
+for ($p=0; $p < count($data); $p++) {
+    $titre = $data[$p]['title'];
+}
+
+// echo count($data);
+
 // Nom des tâches
 // for ($k=0; $k < count($data); $k++) {
 //     $tasks = [
@@ -32,44 +40,46 @@ if ($data == null) {
 // echo array($data)";
 // $test = 'henry';
 // echo $data[1]['title'];
+
+$number = count($data);
+// $test = ["Vérif","Henry","Modus", "Jean-Louis", "MJ", "SPNWH"]
 ?>
 
 <?php foreach ($data as $key => $value): ?>
-    
-    
-    <meta charset="UTF-8">
-    
-    <link rel="stylesheet" href="src/css/styles.css">
-    
-    <!-- # code... -->
-    
-    <div class="title">
+    <?php foreach ($data as $taskKey => $task): ?>
+        <?php foreach ($data as $key => $title): ?>
         
-        <h3 class="title__task">
-            <?php for ($j=0; $j < count(array($data)); $j++): ?> 
-                <?= $title ?>
+        
+        <meta charset="UTF-8">
+        
+        <link rel="stylesheet" href="src/css/styles.css">
+        
+        <!-- # code... -->
+        
+        <div class="title">
             
-                    </h3>
-                <?php endfor ?>
-                    <div class="title__wrapper">
-                        <?php foreach ($data as $key => $value): ?>
+            <h3 class="title__task">
+                <?= $title['title']; ?>
+            </h3>
+            <div class="title__wrapper">
 
 
-                        <?= "Ok"; ?>
-                    <?php endforeach ?>
-
-                            
-                            <?php for ($k=0; $k < count(array($data)); $k++): ?>
-                                <?= $tasks = [
-                                    $data[$k]['task'],
-                                    $data[$k]['task1'],
-                                ]; ?>
-                                <?php for ($g=0; $g < count($tasks); $g++): ?> 
-                                    <?= "-------" ?>
-                                    <?= "\n<h4>$tasks[0]</h4>" ?>
-                                    <?= "\n<h4>$tasks[1]</h4>" ?>
-                                    <?php endfor ?>
-                            <?php endfor ?>
+                        <h4><?= $task['task']; ?></h4>
+                        <h4><?= $task['task1']; ?></h4>
+                        
+                        
+                        <?php //for ($k=0; $k < count(array($data)); $k++) {
+                            //      $tasks = [
+                            //          $data[$k]['task'],
+                            //         $data[$k]['task1'],
+                            //     ];
+                            //     for ($g=0; $g < 1; $g++) {
+                            //         echo "-------";
+                            //         echo "\n<h4>$tasks[0] 11</h4>";
+                            //         echo "\n<h4>$tasks[1] 22</h4>";
+                            //     }
+                            // }
+                            ?>
 
                         <div class="task__adds">
                             <h4>Ajouter tâches</h4>
@@ -78,8 +88,10 @@ if ($data == null) {
                     <?php include("progress-line.php"); ?>                    
                 </div>
                 <?php endforeach ?>
+            <?php endforeach ?>
+        <?php endforeach ?>
 
-                <style>
+        <style>
                     .title__wrapper {position: relative;}
                     svg.delete {
                         position: absolute;
@@ -88,7 +100,7 @@ if ($data == null) {
                         width: 30px;
                         height: 30px;
                     }
-                </style>
+                    </style>
 
 <?php 
 //"\n<h4>$task[$key]</h4>" 
