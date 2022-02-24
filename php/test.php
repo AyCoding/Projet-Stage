@@ -34,23 +34,32 @@ if ($data == null) {
 // echo $data[1]['title'];
 ?>
 
-<meta charset="UTF-8">
-
-<link rel="stylesheet" href="src/css/styles.css">
-
-<?php for ($j=0; $j < 1 ; $j++): ?> 
+<?php foreach ($data as $key => $value): ?>
+    
+    
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="src/css/styles.css">
+    
     <!-- # code... -->
-
+    
     <div class="title">
+        
         <h3 class="title__task">
-            <?= $data[$j]['title'] ?>
-            <?= $j ?>
+            <?php for ($j=0; $j < count(array($data)); $j++): ?> 
+                <?= $title ?>
             
                     </h3>
-                    
+                <?php endfor ?>
                     <div class="title__wrapper">
+                        <?php foreach ($data as $key => $value): ?>
+
+
+                        <?= "Ok"; ?>
+                    <?php endforeach ?>
+
                             
-                            <?php for ($k=0; $k < count($data); $k++): ?>
+                            <?php for ($k=0; $k < count(array($data)); $k++): ?>
                                 <?= $tasks = [
                                     $data[$k]['task'],
                                     $data[$k]['task1'],
@@ -68,7 +77,7 @@ if ($data == null) {
                     </div>
                     <?php include("progress-line.php"); ?>                    
                 </div>
-                <?php endfor ?>
+                <?php endforeach ?>
 
                 <style>
                     .title__wrapper {position: relative;}
@@ -85,4 +94,4 @@ if ($data == null) {
 //"\n<h4>$task[$key]</h4>" 
 ?>
 
-<h1 style="text-align: center;">____________________</h1>
+<!-- <h1 style="text-align: center;">____________________</h1> -->

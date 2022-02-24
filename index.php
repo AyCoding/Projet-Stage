@@ -18,8 +18,8 @@ est_connecte();
         <?php if (est_connecte()): ?>
             <?= include("tasks.php") ?>
             <?= include("modal.php") ?>
-        <?php endif ?>
-    
+            <?php endif ?>
+            
     <script src="src/js/app.js"></script>
 
     </body>
