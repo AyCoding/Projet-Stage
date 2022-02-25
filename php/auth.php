@@ -12,3 +12,4 @@ function forcer_utilisateur_connecte (): void {
         exit();
     }
 }
+?>

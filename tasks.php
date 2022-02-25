@@ -26,7 +26,7 @@ forcer_utilisateur_connecte();
                         <h2>Ajout d'un projet</h2>
                         
                     </div>
-                        <?php include("php/test.php") ?>
+                        <?php include("controller/tasksAuto.php"); ?>
                 </section>
 
                 <section class="">
@@ -64,6 +64,7 @@ forcer_utilisateur_connecte();
         </div>
                 
     <?php include("view/footer.php"); ?>
+
     </body>
 </html>
 <style>

@@ -5,21 +5,39 @@ function toggleTask () {
     
     const title = document.querySelectorAll('.title__task');
     const title_wrapper = document.querySelectorAll('.title__wrapper');
-
+    
     for (let a = 0; a < title.length; a++) {
         title[a].addEventListener('click', () => {
             title_wrapper[a].classList.toggle('active');
         })
+
+
+        
+        
     }
+    // ForEach pour chaque ".title_task"
+    // Dans ".title_task" supprime la ligne voulue
+    const removeTask = document.querySelectorAll('.delete');
     
-}
+    title.forEach(element => {
+        console.log(element);
+        const oktest = document.querySelector('.delete');
+        for (let d = 0; d < removeTask.length; d++) {
+            removeTask[d].addEventListener('click', () => {
+                console.log("test");
+            })
+    };
+    })
+    
+} 
+
 toggleTask();
 
 // Ajout de la class "active" sur les sections en passant par "Projets en cours" ou "Projets finis" 
 for (let i = 0; i < task_title.length; i++) {
-
+    
     task_title[i].addEventListener("click", () => {
-
+        
         if (i == 0) {
 
             task_title[0].classList.add('active');
@@ -35,32 +53,23 @@ for (let i = 0; i < task_title.length; i++) {
             task_list[0].classList.remove('active');
 
         }
-
+        
     });
-
+    
 }
+
+
 
 const addingTasks = document.querySelector('.add__project');
 const modal = document.querySelector('.modal');
 
 function addTasks () {
-    
-    // const addingTasks = document.querySelector('.add__project');
-    // console.log(addingTasks);
-    // const modal = document.querySelector('.modal');
-    // console.log(modal);
-
-    // for (let j = 0; j < addingTasks.length; j++) {
-        // console.log(addingTasks[j]);
 
         addingTasks.addEventListener('click', () => {
-            modal.classList.toggle('active')
+            modal.classList.toggle('active');
         })
-        
-    // }
     
-    const aside = document.querySelector('aside');
-    // console.log(aside);
+        const aside = document.querySelector('aside');
     
     aside.addEventListener('click', () => {
         modal.classList.remove('active');

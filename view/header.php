@@ -4,7 +4,10 @@
 ?>
 <header>
     <div class="logo">
-        <a href="/">Gestion des projets</a>
+        <a href="/" style="display: flex; align-items: center;">
+            <img src="assets/cropped-ardenne-22-192x192.png" alt="" style="width: 50px; margin-right: 10px;">
+            Gestion des projets
+        </a>
     </div>
     <nav>
         <ul>
