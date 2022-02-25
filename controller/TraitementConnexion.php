@@ -28,7 +28,6 @@ if (isset($_POST['submit'])) {
         }
         else {
             $error = "Identifiants incorrects !";
-            echo $error;
         }
     }
     else {
@@ -45,7 +44,7 @@ if (isset($_POST['submit'])) {
 }
 ?>
 
-<style>
+<!-- <style>
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap');
 
@@ -62,4 +61,4 @@ if (isset($_POST['submit'])) {
         vertical-align: middle;
         color: red;
     }
-</style>
+</style> -->

@@ -1,5 +1,5 @@
-<?php session_start(); ?>
 <?php $error = null; ?>
+<?php require "controller/traitementConnexion.php"; ?>
 
 
 <!DOCTYPE html>
@@ -19,7 +19,7 @@
             <img src="assets/ardenne.png" alt="">
         </h1>
         
-        <form method="POST" action="log.php">
+        <form method="POST" action="login.php">
 
             <div class="form__group">
                 <input type="email" name="email" id="pseudo" required placeholder="Saisir l'identifiant">
