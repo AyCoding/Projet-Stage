@@ -1,5 +1,7 @@
 const task_title = document.querySelectorAll('.title__project');
 const task_list = document.querySelectorAll('section');
+
+
 // Pour ouvrir les contenus des tâches
 function toggleTask () {
     
@@ -11,23 +13,20 @@ function toggleTask () {
             title_wrapper[a].classList.toggle('active');
         })
 
-
-        
-        
     }
     // ForEach pour chaque ".title_task"
     // Dans ".title_task" supprime la ligne voulue
-    const removeTask = document.querySelectorAll('.delete');
+    // const removeTask = document.querySelectorAll('.delete');
     
-    title.forEach(element => {
-        console.log(element);
-        const oktest = document.querySelector('.delete');
-        for (let d = 0; d < removeTask.length; d++) {
-            removeTask[d].addEventListener('click', () => {
-                console.log("test");
-            })
-    };
-    })
+    // title.forEach(element => {
+    //     console.log(element);
+    //     const oktest = document.querySelector('.delete');
+    //     for (let d = 0; d < removeTask.length; d++) {
+    //         removeTask[d].addEventListener('click', () => {
+    //             console.log("test");
+    //         })
+    // };
+    // })
     
 } 
 
@@ -76,3 +75,6 @@ function addTasks () {
     })
 }
 addTasks();
+
+const removeTask = document.querySelectorAll('.delete');
+console.log(removeTask);

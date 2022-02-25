@@ -1,6 +1,5 @@
 <?php
 // require_once "php/auth.php";
-
 ?>
 <header>
     <div class="logo">

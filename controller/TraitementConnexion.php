@@ -43,22 +43,3 @@ if (isset($_POST['submit'])) {
     } 
 }
 ?>
-
-<!-- <style>
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap');
-
-
-    html, body {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 30px;
-        font-weight: 700;
-        font-family: 'Montserrat',sans-serif;
-        vertical-align: middle;
-        color: red;
-    }
-</style> -->
