@@ -4,7 +4,7 @@ require "controller/traitementProjet.php";
 require_once "php/auth.php";
 est_connecte();
 ?>
-<html>
+<html lang="fr">
     <head>
 
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,7 +25,3 @@ est_connecte();
 
     </body>
 </html>
-
-<style>
-    svg {fill:#333;}
-</style>

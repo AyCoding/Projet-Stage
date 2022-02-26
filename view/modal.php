@@ -25,12 +25,6 @@
 
 <style>
 
-body {
-        /* background-color: #333333d3; */
-        position: relative;
-    }
-
-
     .modal {
         position: fixed;
         top: 50%;
@@ -41,7 +35,6 @@ body {
         height: auto;
         max-height: 90%;
         margin: auto;
-        display: flex;
         display: none;
     }
 
@@ -54,7 +47,7 @@ body {
         width: 90%;
         height: 100%;
         padding: 5%;
-        border-radius: 25px 0px 25px 25px;
+        border-radius: 25px 0 25px 25px;
     }
     
     .modal__content h1 {

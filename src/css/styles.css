@@ -179,7 +179,7 @@ header {
   font-size: 16px;
   font-weight: 700;
   background-color: #fdfdfd;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   text-transform: uppercase;
 }
 header a {
@@ -189,7 +189,7 @@ header a svg {
   margin-right: 10px;
 }
 header a:hover {
-  fill: grey;
+  fill: gray;
   color: gray;
   transition: 0.3s;
 }
@@ -252,7 +252,7 @@ header nav ul {
 .header__task .content section .title .title__task::after {
   content: "";
   display: inline-block;
-  background-image: url(../../assets/arrow-down-s-line.svg);
+  background-image: url("../../assets/arrow-down-s-line.svg");
   width: 25px;
   height: 25px;
   position: absolute;
@@ -281,7 +281,7 @@ header nav ul {
   height: 50px;
   border-radius: 25px;
   color: #FFF;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
 .header__task .content section .title .line {
@@ -301,6 +301,24 @@ header nav ul {
   height: 10px;
 }
 
+.add__project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 50%;
+  height: 50px;
+  background-color: orange;
+  color: #FFF;
+  cursor: pointer;
+  border-radius: 25px;
+}
+.add__project .add_project:hover {
+  transition: 0.3s;
+  background-color: #c80000;
+  cursor: pointer;
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -316,6 +334,7 @@ footer a {
 
 svg {
   width: 20px;
+  fill: #333;
 }
 
 /*# sourceMappingURL=styles.css.map */
