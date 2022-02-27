@@ -1,3 +1,3 @@
 <footer>
-        <b>Développé par <i style="color: orange;">Aymeric DE LANGE</i> pour <i style="color: orange;">Ardenne Métropole</i></b>
+        <p>Développé par <i>Aymeric DE LANGE</i> pour <i>Ardenne Métropole</i></p>
     </footer>

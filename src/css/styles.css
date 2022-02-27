@@ -175,11 +175,11 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 2%;
-  height: 70px;
+  height: 90px;
   font-size: 16px;
   font-weight: 700;
   background-color: #fdfdfd;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
   text-transform: uppercase;
 }
 header a {
@@ -326,10 +326,12 @@ footer {
   height: 40px;
   background-color: #333;
   color: #FFF;
+  font-weight: 700;
 }
-footer a {
+footer i {
   color: orange;
-  text-decoration: underline;
+  font-weight: 900;
+  letter-spacing: 0.5px;
 }
 
 svg {
