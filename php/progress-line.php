@@ -1,5 +1,5 @@
 <?php 
-$data = '38%';
+$data = '50%';
 $numberTask = 2;
 ?>
 <div class="line">

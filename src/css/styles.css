@@ -101,8 +101,7 @@ iframe {
 body {
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
-  color: #333;
-  font-weight: 500;
+  color: #393E46;
 }
 
 h1,
@@ -147,7 +146,7 @@ h3 {
 .login__form input {
   width: 100%;
   margin: 10px 0;
-  border: 1px solid rgba(51, 51, 51, 0.5);
+  border: 1px solid rgba(34, 40, 49, 0.5);
   padding: 5px;
   border-radius: 5px;
 }
@@ -222,7 +221,7 @@ header nav ul {
   cursor: pointer;
 }
 .header__task .header__title h2.active {
-  border-bottom: 5px solid orange;
+  border-bottom: 5px solid #393E46;
 }
 .header__task .content section {
   width: 100%;
@@ -233,7 +232,7 @@ header nav ul {
 }
 .header__task .content section:nth-child(2) {
   background-color: rgba(0, 0, 255, 0.5);
-  color: #FFF;
+  color: #FDFDFD;
   display: none;
 }
 .header__task .content section.active {
@@ -259,7 +258,7 @@ header nav ul {
   right: 0;
 }
 .header__task .content section .title .title__wrapper {
-  background-color: #F1F1F1;
+  background-color: #FDFDFD;
   border-radius: 10px;
   left: 0;
   width: 100%;
@@ -273,15 +272,14 @@ header nav ul {
   display: block;
 }
 .header__task .content section .title .title__wrapper .task__adds {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  background-color: orange;
+  display: flex;
+  background-color: #00ADB5;
   width: 300px;
   height: 50px;
+  padding: auto;
   border-radius: 25px;
-  color: #FFF;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  color: #FDFDFD;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
 .header__task .content section .title .line {
@@ -308,8 +306,8 @@ header nav ul {
   margin: auto;
   width: 50%;
   height: 50px;
-  background-color: orange;
-  color: #FFF;
+  background-color: #00ADB5;
+  color: #FDFDFD;
   cursor: pointer;
   border-radius: 25px;
 }

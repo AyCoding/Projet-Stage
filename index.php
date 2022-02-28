@@ -1,7 +1,7 @@
 <?php session_start(); ?>
 <?php 
 require "controller/traitementProjet.php";
-require_once "php/auth.php";
+require "php/auth.php";
 est_connecte();
 ?>
 <html lang="fr">

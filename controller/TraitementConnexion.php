@@ -20,7 +20,7 @@ if (isset($_POST['submit'])) {
             echo "Connexion effectuée";
             $_SESSION['email'] = $email;
 
-            $_SESSION['connecte'] = 1;
+            $_SESSION['connecte'] = true;
         
             header('Location: /');
 
@@ -38,7 +38,7 @@ if (isset($_POST['submit'])) {
         $req->execute();
         echo "Enregistrement effectuée";
 
-        $_SESSION['connecte'] = 1;
+        $_SESSION['connecte'] = true;
         header('Location: /');
     } 
 }

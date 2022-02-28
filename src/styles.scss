@@ -68,7 +68,7 @@ header {
             cursor: pointer;
 
             &.active {
-                border-bottom: 5px solid orange;
+                border-bottom: 5px solid $grey;
             }
         }
     }
@@ -84,7 +84,7 @@ header {
             
             &:nth-child(2) {
                 background-color: rgba(blue, .5);
-                color: #FFF;
+                color: $white;
                 display: none;
             }
 
@@ -98,12 +98,9 @@ header {
                 position: relative;
                 width: 80%;
                 margin: auto;
-                // text-align: center;
-                // background-color: #111222;
                 margin-bottom: 50px;
 
                 .title__task {
-                    // position: relative;
                     padding: 20px 0;
                     cursor: pointer;
                     
@@ -115,12 +112,11 @@ header {
                         height: 25px;
                         position: absolute;
                         right: 0;
-                        // transform: rotate(180deg);
                     }
 
                 }
                 .title__wrapper {
-                    background-color: #F1F1F1;
+                    background-color: $white;
                     border-radius: 10px;
                     left: 0;
                     width: 100%;
@@ -135,15 +131,16 @@ header {
                     }
                     
                     .task__adds {
-                        display: inline-flex;
-                        justify-content: center;
-                        align-items: center;
-                        background-color: orange;
+                        display: flex;
+                        //justify-content: center;
+                        //align-items: center;
+                        background-color: $blue;
                         width: 300px;
                         height: 50px;
+                        padding: auto;
                         border-radius: 25px;
-                        color: #FFF;
-                        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+                        color: $white;
+                        box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
                         cursor: pointer;
                     }
             }
@@ -181,8 +178,8 @@ header {
     margin: auto;
     width: 50%;
     height: 50px;
-    background-color: orange;
-    color: #FFF;
+    background-color: $blue;
+    color: $white;
     cursor: pointer;
     border-radius: 25px;
 

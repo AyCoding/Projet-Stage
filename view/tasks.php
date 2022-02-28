@@ -20,7 +20,7 @@ forcer_utilisateur_connecte();
 
                 <section class="">
 
-                    <?php include("controller/tasksAuto.php"); ?>
+                    <?php include("controller/tasksProgress.php"); ?>
 
                 </section>
             </div>
