@@ -58,6 +58,7 @@ $data = $result->fetchAll();
                         width: 30px;
                         height: 30px;
                         margin: auto 10px;
+                        fill: #222831;
                     }
 
                     input[type="checkbox"] {
@@ -96,5 +97,10 @@ $data = $result->fetchAll();
                         border: 1px solid rgba(51, 51, 51, .1);
                         padding: 5px;
                         border-radius: 5px;
+                    }
+
+                    .form__task input::placeholder {
+                        color: #333333;
+                        opacity: .5;
                     }
         </style>
