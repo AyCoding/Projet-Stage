@@ -169,12 +169,10 @@ body {
   position: relative;
 }
 
+/* HEADER */
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 2%;
-  height: 90px;
   font-size: 16px;
   font-weight: 700;
   background-color: #fdfdfd;
@@ -183,13 +181,22 @@ header {
 }
 header a {
   display: flex;
+  padding: 32px;
 }
-header a svg {
+header a img, header a svg {
+  width: 30px;
+  height: 30px;
+  fill: #333;
   margin-right: 10px;
+  margin-top: -5px;
 }
 header a:hover {
-  fill: gray;
-  color: gray;
+  background: #00ADB5;
+  transition: 0.3s;
+}
+header a:hover, header a:hover svg {
+  color: white;
+  fill: white;
   transition: 0.3s;
 }
 header nav ul {
@@ -197,6 +204,7 @@ header nav ul {
   gap: 50px;
 }
 
+/* HEADER */
 .hero {
   display: flex;
   align-items: center;
@@ -219,6 +227,7 @@ header nav ul {
   width: 50%;
   height: 70px;
   cursor: pointer;
+  border-bottom: 5px solid transparent;
 }
 .header__task .header__title h2.active {
   border-bottom: 5px solid #393E46;
@@ -229,11 +238,13 @@ header nav ul {
   padding: 25px 0;
   background-color: #fddfdf;
   display: none;
+  height: 100%;
 }
 .header__task .content section:nth-child(2) {
   background-color: rgba(0, 0, 255, 0.5);
   color: #FDFDFD;
   display: none;
+  height: 100%;
 }
 .header__task .content section.active {
   display: block;
@@ -262,6 +273,7 @@ header nav ul {
   border-radius: 10px;
   left: 0;
   width: 100%;
+  height: 0;
   margin-bottom: 10px;
   padding: 20px;
   padding-left: 10px;
@@ -270,6 +282,7 @@ header nav ul {
 }
 .header__task .content section .title .title__wrapper.active {
   display: block;
+  height: auto;
 }
 .header__task .content section .title .title__wrapper .task__adds {
   display: flex;
@@ -330,11 +343,6 @@ footer i {
   color: orange;
   font-weight: 900;
   letter-spacing: 0.5px;
-}
-
-svg {
-  width: 20px;
-  fill: #333;
 }
 
 /*# sourceMappingURL=styles.css.map */

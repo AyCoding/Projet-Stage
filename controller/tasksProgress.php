@@ -43,39 +43,3 @@ $data = $result->fetchAll();
     </div>
 
 <?php endforeach ?>
-
-<!--<style>
-    svg.delete, h4 svg {
-        width: 30px;
-        height: 30px;
-        margin: auto 10px;
-    }
-
-    input[type="checkbox"] {
-        width: 25px;
-        height: 25px;
-    }
-
-    .delete:hover {
-        transition: .3s;
-        fill: rgba(200, 0, 0, 1);
-        cursor: pointer;
-    }
-
-    h4 {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    h4 div {
-        display: flex;
-        align-items: center;
-    }
-
-    .task__adds button {
-        width: 100%;
-        font-weight: 700;
-        font-size: 17px;
-    }
-</style>-->

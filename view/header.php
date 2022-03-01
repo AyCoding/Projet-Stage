@@ -1,10 +1,7 @@
-<?php
-// require_once "php/auth.php";
-?>
 <header>
     <div class="logo">
-        <a href="/" style="display: flex; align-items: center;">
-            <img src="assets/cropped-ardenne-22-192x192.png" alt="" style="width: 50px; margin-right: 10px;">
+        <a href="/"">
+            <img src="assets/cropped-ardenne-22-192x192.png" alt=""">
             Gestion des projets
         </a>
     </div>
