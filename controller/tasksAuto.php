@@ -16,11 +16,12 @@ $data = $result->fetchAll();
                 <?= $value['title']; ?>
             </h3>
             <div class="title__wrapper">
+                <form action="" method="post">
                         <h4>
                             <?= $value['task']; ?>
                             <div>
                             <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm1 2v14h14V5H5z"/></svg> -->
-                            <input type="checkbox">
+                            <input type="checkbox" name="check" id="checkbox">
                             
                             <svg class="delete" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M7 4V2h10v2h5v2h-2v15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6H2V4h5zM6 6v14h12V6H6zm3 3h2v8H9V9zm4 0h2v8h-2V9z"/></svg>
                             </div>
@@ -29,13 +30,12 @@ $data = $result->fetchAll();
                             <?= $value['task1']; ?>
                             <div>
 <!--                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm1 2v14h14V5H5z"/></svg>-->
-                            <input type="checkbox">
+                            <input type="checkbox" name="check" id="checkbox">
 
                                 <svg class="delete" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M7 4V2h10v2h5v2h-2v15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6H2V4h5zM6 6v14h12V6H6zm3 3h2v8H9V9zm4 0h2v8h-2V9z"/></svg>
                             </div>
                         </h4>
                         <div class="form__task">
-                            <form action="">
                                 <!--<label for=""></label>-->
                                 <input type="text" name="task" id="task" placeholder="Nom d'un tâches">
                         <div class="task__adds">

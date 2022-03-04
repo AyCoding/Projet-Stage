@@ -10,6 +10,7 @@ body {
 }
 /* HEADER */
 header {
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: space-between;
     font-size: 16px;
@@ -65,7 +66,7 @@ header {
         margin-bottom: 20px;
     }
 }
-
+/* HEADER PROJECT */
 .header__task {
 
     .header__title {
@@ -85,105 +86,105 @@ header {
             }
         }
     }
+}
 
-    .content {
+/* CONTENT */
+.content {
 
-        section {
-            width: 100%;
-            height: auto;
-            padding: 25px 0;
-            background-color: #fddfdf;
+    section {
+        width: 100%;
+        padding: 25px 0;
+        background-color: #fddfdf;
+        display: none;
+        height: 100%;
+
+        &:nth-child(2) {
+            background-color: rgba(blue, .5);
+            color: $white;
             display: none;
             height: 100%;
+        }
 
-            &:nth-child(2) {
-                background-color: rgba(blue, .5);
-                color: $white;
-                display: none;
-                height: 100%;
-            }
-
-            &.active {
-                display: block;
-            }
+        &.active {
+            display: block;
+        }
 
 
 
-            .title {
-                position: relative;
-                width: 80%;
-                margin: auto;
-                margin-bottom: 50px;
+        .title {
+            position: relative;
+            width: 80%;
+            margin: auto;
+            margin-bottom: 50px;
 
-                .title__task {
-                    padding: 20px 0;
-                    cursor: pointer;
-                    
-                    &::after {
-                        content: '';
-                        display: inline-block;
-                        background-image: url("../../assets/arrow-down-s-line.svg");
-                        width: 25px;
-                        height: 25px;
-                        position: absolute;
-                        right: 0;
-                    }
+            .title__task {
+                padding: 20px 0;
+                cursor: pointer;
 
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    background-image: url("../../assets/arrow-down-s-line.svg");
+                    width: 25px;
+                    height: 25px;
+                    position: absolute;
+                    right: 0;
                 }
-                .title__wrapper {
-                    background-color: $white;
-                    border-radius: 10px;
-                    left: 0;
-                    width: 100%;
-                    height: 0;
-                    margin-bottom: $line-height;
-                    padding: 20px;
-                    padding-left: 10px;
-                    display: none;
-                    color: $grey;
 
-                    &.active {
-                        display: block;
-                        height: auto;
-                    }
-                    
-                    .task__adds {
-                        display: flex;
-                        background-color: $blue;
-                        width: 300px;
-                        height: 50px;
-                        padding: auto;
-                        border-radius: 25px;
-                        color: $white;
-                        box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
-                        cursor: pointer;
-                    }
             }
+            .title__wrapper {
+                background-color: $white;
+                border-radius: 10px;
+                left: 0;
+                width: 100%;
+                height: 0;
+                margin-bottom: $line-height;
+                padding: 20px;
+                padding-left: 10px;
+                display: none;
+                color: $grey;
 
-                // PROGRESS LINE
-                .line {
-                  position: relative;
-                  
-                    .line-main {
-                        position: absolute;
-                        border-radius: 25px;
-                        background-color: #ccc;
-                        width: 100%;
-                        height: $line-height;
-                    }
-                    
-                    .line-progress {
-                        position: absolute;
-                        border-radius: 25px;
-                        background-color: #008000;
-                        // width: 50%;
-                        height: $line-height;
-                    }
+                &.active {
+                    display: block;
+                    height: auto;
+                }
+
+                .task__adds {
+                    display: flex;
+                    background-color: $blue;
+                    width: 300px;
+                    height: 50px;
+                    border-radius: 4px;
+                    color: $white;
+                    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+                    cursor: pointer;
+                }
+        }
+
+            // PROGRESS LINE
+            .line {
+              position: relative;
+
+                .line-main {
+                    position: absolute;
+                    border-radius: 25px;
+                    background-color: #ccc;
+                    width: 100%;
+                    height: $line-height;
+                }
+
+                .line-progress {
+                    position: absolute;
+                    border-radius: 25px;
+                    background-color: #008000;
+                    // width: 50%;
+                    height: $line-height;
                 }
             }
         }
     }
 }
+
 
 //Bouton cliquable pour ajouter un projet
 .add__project {
@@ -196,7 +197,7 @@ header {
     background-color: $blue;
     color: $white;
     cursor: pointer;
-    border-radius: 25px;
+    border-radius: 4px;
 
     .add_project:hover {
         transition: .3s;

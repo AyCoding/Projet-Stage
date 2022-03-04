@@ -1,4 +1,4 @@
-   <div class="modal">
+    <div class="modal">
         <div class="modal__content">
             <h1>Ajout d'un projet</h1>
             <form action="/" method="POST">
@@ -22,3 +22,110 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"/></svg>
         </aside>
     </div>
+
+   <style>
+       :root {
+           --white: #222831;
+           --black: #FDFDFD;
+       }
+       .modal {
+           position: fixed;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           width: 100%;
+           max-width: 90%;
+           height: auto;
+           max-height: 90%;
+           margin: auto;
+           display: none;
+           color: #333;
+       }
+
+       .modal.active {
+           display: flex;
+       }
+
+       .modal__content {
+           background-color: #fdfdfd;
+           width: 90%;
+           height: 100%;
+           padding: 5%;
+           border-radius: 25px 0 25px 25px;
+       }
+
+       .modal__content h1 {
+           padding: 5% 0;
+       }
+
+       aside {
+           background-color: var(--black);
+           width: 10%;
+           border-radius: 0 50px 50px 0;
+           height: 100px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+
+       aside svg {
+           width: 100%;
+           margin-bottom: -5px;
+           margin-left: -5px;
+           fill: var(--white);
+       }
+
+       aside svg:hover {
+           fill: var(--black);
+           transition: .3s;
+       }
+
+       aside:hover {
+           transition: .3s;
+           background-color: rgba(255, 0, 0, 1);
+           cursor: pointer;
+       }
+
+
+       .form__group * {
+           padding: 10px;
+           margin: 5px;
+           border-radius: 5px;
+       }
+
+       .form__group input {
+           border: 2px solid var(--white);
+           width: 100%;
+           color: var(--white);
+       }
+
+       .form__last button {
+           width: 100%;
+           background-color: var(--white);
+           color: var(--black);
+           display: flex;
+           justify-content: center;
+           font-size: 20px;
+           font-weight: 700;
+       }
+
+       .form__last:hover button {
+           background-color: var(--black);
+           color: var(--white);
+           transition: .3s;
+       }
+
+       input::placeholder {
+           color: var(--white);
+       }
+
+       .modal__content {
+           border: 5px solid black;
+       }
+
+       aside {
+           border-top: 5px solid black;
+           border-bottom: 5px solid black;
+           border-right: 5px solid black;
+       }
+   </style>
