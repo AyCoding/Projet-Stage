@@ -13,36 +13,36 @@
 </head>
 <body>
 
-    <div class="login__form">
-        <h1>Se Connecter
-            <img src="assets/ardenne.png" alt="">
-        </h1>
+<div class="login__form">
+    <h1>Se Connecter
+        <img src="assets/ardenne.png" alt="">
+    </h1>
 
-        <form method="POST" action="signup.php">
+    <form method="POST" action="signup.php">
 
-            <div class="form__group">
-                <input type="email" name="email" id="pseudo" required placeholder="Saisir l'identifiant">
+        <div class="form__group">
+            <input type="email" name="email" id="pseudo" required placeholder="Saisir l'identifiant">
+        </div>
+
+        <div class="form__group">
+            <input type="password" name="pass" id="password" required placeholder="Saisir le mot de passe">
+        </div>
+        <div class="form__group">
+            <input type="password" name="pass" id="password" required placeholder="Confirmer le mot de passe">
+        </div>
+
+        <div class="form__group form__last">
+            <button type="submit" name="submit" id="submit">S'inscrire</button>
+        </div>
+
+        <?php if ($error): ?>
+            <div class="alert">
+                <?= $error ?>
             </div>
+        <?php endif ?>
 
-            <div class="form__group">
-                <input type="password" name="pass" id="password" required placeholder="Saisir le mot de passe">
-            </div>
-            <div class="form__group">
-                <input type="password" name="pass" id="password" required placeholder="Confirmer le mot de passe">
-            </div>
-
-            <div class="form__group form__last">
-                <button type="submit" name="submit" id="submit">S'inscrire</button>
-            </div>
-
-            <?php if ($error): ?>
-                <div class="alert">
-                    <?= $error ?>
-                </div>
-                <?php endif ?>
-
-        </form>
-    </div>
+    </form>
+</div>
 
 </body>
 </html>
@@ -50,20 +50,20 @@
 <style>
     html,
     body {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(51, 51, 51, .1);
-    display: flex;
-    vertical-align: middle;
-}
+        width: 100%;
+        height: 100%;
+        background-color: rgba(51, 51, 51, .1);
+        display: flex;
+        vertical-align: middle;
+    }
 
-.alert {
-    background-color: rgba(255, 0 , 0, .5);
-    color: #FFF;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .alert {
+        background-color: rgba(255, 0, 0, .5);
+        color: #FFF;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 </style>

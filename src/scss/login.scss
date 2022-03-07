@@ -1,55 +1,55 @@
 @import "base";
 
 .login__form {
-    width: auto;
-    height: auto;
-    max-width: 80%;
-    max-height: 80%;
-    margin: auto;
-    padding: 5%;
-    background-color: $white;
-    border-radius: 10px;
+  width: auto;
+  height: auto;
+  max-width: 80%;
+  max-height: 80%;
+  margin: auto;
+  padding: 5%;
+  background-color: $white;
+  border-radius: 10px;
 
-    img {
-        width: 300px;
+  img {
+    width: 300px;
+  }
+
+  h1 {
+    margin-bottom: 30px;
+  }
+
+  label {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  input {
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid rgba($black, .5) !important;
+    color: $black !important;
+    padding: 5px;
+    border-radius: 5px;
+
+    &::placeholder {
+      color: rgb($black, .5);
     }
 
-    h1 {
-        margin-bottom: 30px;
+  }
+
+  form #submit {
+    background-color: #333;
+    color: #FDFDFD;
+    margin-top: 2em;
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid rgba(#333, .5);
+    padding: 5px;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: rgba(#333, .5);
+      transition: .3s;
     }
-
-    label {
-        font-size: 20px;
-        font-weight: 700;
-    }
-
-    input {
-        width: 100%;
-        margin: 10px 0;        
-        border: 1px solid rgba($black, .5)!important;
-        color: $black!important;
-        padding: 5px;
-        border-radius: 5px;
-
-        &::placeholder {
-            color: rgb($black, .5);
-        }
-
-    }
-
-    form #submit {
-        background-color: #333;
-        color: #FDFDFD;
-        margin-top: 2em;
-        width: 100%;
-        margin: 10px 0;        
-        border: 1px solid rgba(#333, .5);
-        padding: 5px;
-        border-radius: 5px;
-        
-        &:hover{
-            background-color: rgba(#333, .5);
-            transition: .3s;
-        }
-    }
+  }
 }

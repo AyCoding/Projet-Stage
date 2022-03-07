@@ -399,4 +399,8 @@ footer i {
   letter-spacing: 0.5px;
 }
 
+.modal {
+  z-index: 9999;
+}
+
 /*# sourceMappingURL=styles.css.map */
