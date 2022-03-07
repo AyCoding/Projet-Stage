@@ -11,9 +11,9 @@ $data = $result->fetchAll();
 <?php foreach ($data as $key => $value): ?>
 
         <div class="title">
-            
             <h3 class="title__task">
-                <?= $value['title']; ?>
+                    <?= $value['title']; ?>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z" fill="rgba(51,51,51,1)"/></svg>
             </h3>
             <div class="title__wrapper">
                 <form action="" method="post">
@@ -45,13 +45,10 @@ $data = $result->fetchAll();
                             </form>
                         </div>
 
-
-
                     </div>
-                    <?php include("php/progress-line.php"); ?>                    
                 </div>
-                
-        <?php endforeach ?>
+
+<?php endforeach ?>
 
         <style>
                     svg.delete, h4 svg {

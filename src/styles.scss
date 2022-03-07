@@ -32,16 +32,9 @@ header {
         }
 
         &:hover {
-            background: $black;
+            background: rgba(0, 0, 0, .05);
             transition: .3s;
         }
-
-        &:hover, &:hover svg {
-            color: $white;
-            fill: $white;
-            transition: .3s;
-        }
-
     }
 
     nav {
@@ -96,95 +89,103 @@ header {
         padding: 25px 0;
         background-color: #fddfdf;
         display: none;
-        height: 100%;
+        height: calc(100% + 20vh);
 
         &:nth-child(2) {
             background-color: rgba(blue, .5);
             color: $white;
             display: none;
-            height: 100%;
         }
 
         &.active {
             display: block;
         }
+    }
+}
 
 
+.title {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
 
-        .title {
-            position: relative;
-            width: 80%;
-            margin: auto;
-            margin-bottom: 50px;
+    .title__task {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+        cursor: pointer;
+        z-index: 1;
 
-            .title__task {
-                padding: 20px 0;
-                cursor: pointer;
-
-                &::after {
-                    content: '';
-                    display: inline-block;
-                    background-image: url("../../assets/arrow-down-s-line.svg");
-                    width: 25px;
-                    height: 25px;
-                    position: absolute;
-                    right: 0;
-                }
-
-            }
-            .title__wrapper {
-                background-color: $white;
-                border-radius: 10px;
-                left: 0;
-                width: 100%;
-                height: 0;
-                margin-bottom: $line-height;
-                padding: 20px;
-                padding-left: 10px;
-                display: none;
-                color: $grey;
-
-                &.active {
-                    display: block;
-                    height: auto;
-                }
-
-                .task__adds {
-                    display: flex;
-                    background-color: $blue;
-                    width: 300px;
-                    height: 50px;
-                    border-radius: 4px;
-                    color: $white;
-                    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
-                    cursor: pointer;
-                }
-        }
-
-            // PROGRESS LINE
-            .line {
-              position: relative;
-
-                .line-main {
-                    position: absolute;
-                    border-radius: 25px;
-                    background-color: #ccc;
-                    width: 100%;
-                    height: $line-height;
-                }
-
-                .line-progress {
-                    position: absolute;
-                    border-radius: 25px;
-                    background-color: #008000;
-                    // width: 50%;
-                    height: $line-height;
-                }
-            }
+        svg {
+            width: 25px;
+            height: 25px;
         }
     }
 }
 
+.title__wrapper {
+    background-color: $white;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: $line-height;
+    padding: 20px;
+    padding-left: 10px;
+    display: none;
+    color: $grey;
+
+    .task__adds {
+        display: flex;
+        background-color: $blue;
+        width: 300px;
+        height: 50px;
+        border-radius: 4px;
+        color: $white;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+    }
+}
+
+
+.title__wrapper {
+    display: block;
+    position: absolute;
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 0;
+    transition: 1.2s;
+    z-index: 1;
+
+    &.active {
+        transform-origin: top;
+        opacity: 1;
+        transform: scaleY(1);
+        transition: 1s ease;
+        z-index: 1000;
+    }
+}
+
+// PROGRESS LINE
+.line {
+    position: relative;
+
+    .line-main {
+        position: absolute;
+        border-radius: 25px;
+        background-color: #ccc;
+        width: 100%;
+        height: $line-height;
+    }
+
+    .line-progress {
+        position: absolute;
+        border-radius: 25px;
+        background-color: #008000;
+        height: $line-height;
+    }
+}
 
 //Bouton cliquable pour ajouter un projet
 .add__project {

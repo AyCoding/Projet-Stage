@@ -224,12 +224,7 @@ header a img, header a svg {
   margin-top: -5px;
 }
 header a:hover {
-  background: #222831;
-  transition: 0.3s;
-}
-header a:hover, header a:hover svg {
-  color: #FDFDFD;
-  fill: #FDFDFD;
+  background: rgba(0, 0, 0, 0.05);
   transition: 0.3s;
 }
 header nav ul {
@@ -273,53 +268,48 @@ header nav ul {
   padding: 25px 0;
   background-color: #fddfdf;
   display: none;
-  height: 100%;
+  height: calc(100% + 20vh);
 }
 .content section:nth-child(2) {
   background-color: rgba(0, 0, 255, 0.5);
   color: #FDFDFD;
   display: none;
-  height: 100%;
 }
 .content section.active {
   display: block;
 }
-.content section .title {
+
+.title {
   position: relative;
   width: 80%;
   margin: auto;
   margin-bottom: 50px;
 }
-.content section .title .title__task {
+.title .title__task {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   padding: 20px 0;
   cursor: pointer;
+  z-index: 1;
 }
-.content section .title .title__task::after {
-  content: "";
-  display: inline-block;
-  background-image: url("../../assets/arrow-down-s-line.svg");
+.title .title__task svg {
   width: 25px;
   height: 25px;
-  position: absolute;
-  right: 0;
 }
-.content section .title .title__wrapper {
+
+.title__wrapper {
   background-color: #FDFDFD;
   border-radius: 10px;
-  left: 0;
   width: 100%;
-  height: 0;
   margin-bottom: 10px;
   padding: 20px;
   padding-left: 10px;
   display: none;
   color: #393E46;
 }
-.content section .title .title__wrapper.active {
-  display: block;
-  height: auto;
-}
-.content section .title .title__wrapper .task__adds {
+.title__wrapper .task__adds {
   display: flex;
   background-color: #004447;
   width: 300px;
@@ -329,17 +319,35 @@ header nav ul {
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
-.content section .title .line {
+
+.title__wrapper {
+  display: block;
+  position: absolute;
+  transform-origin: top;
+  transform: scaleY(0);
+  opacity: 0;
+  transition: 1.2s;
+  z-index: 1;
+}
+.title__wrapper.active {
+  transform-origin: top;
+  opacity: 1;
+  transform: scaleY(1);
+  transition: 1s ease;
+  z-index: 1000;
+}
+
+.line {
   position: relative;
 }
-.content section .title .line .line-main {
+.line .line-main {
   position: absolute;
   border-radius: 25px;
   background-color: #ccc;
   width: 100%;
   height: 10px;
 }
-.content section .title .line .line-progress {
+.line .line-progress {
   position: absolute;
   border-radius: 25px;
   background-color: #008000;
