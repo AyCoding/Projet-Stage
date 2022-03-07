@@ -1,7 +1,11 @@
+/* Reset CSS */
 @import 'scss/reset';
-@import 'scss/base';
+
+/* Login CSS */
 @import 'scss/login';
-@import "scss/modal";
+
+/* Base CSS*/
+@import 'scss/base';
 
 $line-height: 10px;
 
@@ -119,9 +123,16 @@ header {
         cursor: pointer;
         z-index: 1;
 
+        div {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
         svg {
             width: 25px;
             height: 25px;
+            fill: $black;
         }
     }
 }
@@ -164,6 +175,7 @@ header {
         transform: scaleY(1);
         transition: 1s ease;
         z-index: 1000;
+        box-shadow: 0 0 4px rgba(black, .25);
     }
 }
 
