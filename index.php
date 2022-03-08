@@ -1,5 +1,6 @@
-<?php session_start(); ?>
-<?php 
+<?php
+session_start();
+
 require "controller/traitementProjet.php";
 require "php/auth.php";
 est_connecte();
@@ -15,10 +16,10 @@ est_connecte();
     </head>
     <body>
 
-        <?php include("view/header.php"); ?>
+        <?php require("view/header.php"); ?>
         <?php if (est_connecte()): ?>
-            <?= include("view/tasks.php") ?>
-            <?= include("view/modal.php") ?>
+            <?= require("view/tasks.php") ?>
+            <?= require("view/modal.php") ?>
             <?php endif ?>
             
     <script src="src/js/app.js"></script>

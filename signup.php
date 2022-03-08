@@ -1,5 +1,5 @@
 <?php $error = null; ?>
-<?php require "controller/traitementConnexion.php"; ?>
+<?php require "controller/traitementInscription.php"; ?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -18,7 +18,7 @@
         <img src="assets/ardenne.png" alt="">
     </h1>
 
-    <form method="POST" action="signup.php">
+    <form name="signup" method="POST" action="signup.php">
 
         <div class="form__group">
             <input type="email" name="email" id="pseudo" required placeholder="Saisir l'identifiant">
@@ -28,7 +28,8 @@
             <input type="password" name="pass" id="password" required placeholder="Saisir le mot de passe">
         </div>
         <div class="form__group">
-            <input type="password" name="pass" id="password" required placeholder="Confirmer le mot de passe">
+            <input type="password" name="passConfirm" id="passwordConfirm" required
+                   placeholder="Confirmer le mot de passe">
         </div>
 
         <div class="form__group form__last">
@@ -42,6 +43,12 @@
         <?php endif ?>
 
     </form>
+    <p>Vous avez déjà un compte,
+        <a href="login.php" style="color: darkblue; text-decoration: underline;">
+            Connectez-vous
+        </a>
+    </p>
+
 </div>
 
 </body>

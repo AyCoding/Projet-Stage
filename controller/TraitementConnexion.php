@@ -28,16 +28,6 @@ if (isset($_POST['submit'])) {
         } else {
             $error = "Identifiants incorrects !";
         }
-    } else {
-
-        $pass = password_hash($pass, PASSWORD_DEFAULT);
-        $sql = "INSERT INTO user (email, password) VALUES ('$email','$pass')";
-        $req = $db->prepare($sql);
-        $req->execute();
-        echo "Enregistrement effectuée";
-
-        $_SESSION['connecte'] = true;
-        header('Location: /');
     }
 }
 ?>

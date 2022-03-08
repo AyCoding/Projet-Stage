@@ -40,6 +40,11 @@
         <?php endif ?>
 
     </form>
+    <p>Vous n'avez pas de compte,
+        <a href="signup.php" style="color: darkblue; text-decoration: underline;">
+            Inscrivez-vous
+        </a>
+    </p>
 </div>
 
 </body>
