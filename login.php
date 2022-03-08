@@ -22,7 +22,7 @@
     <form method="POST" action="login.php">
 
         <div class="form__group">
-            <input type="email" name="email" id="pseudo" required placeholder="Saisir l'identifiant">
+            <input type="email" name="email" id="pseudo" required placeholder="Saisir l'adresse email">
         </div>
 
         <div class="form__group">
@@ -68,5 +68,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 10px auto;
     }
 </style>

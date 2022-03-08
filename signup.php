@@ -21,7 +21,7 @@
     <form name="signup" method="POST" action="signup.php">
 
         <div class="form__group">
-            <input type="email" name="email" id="pseudo" required placeholder="Saisir l'identifiant">
+            <input type="email" name="email" id="pseudo" required placeholder="Saisir l'adresse email">
         </div>
 
         <div class="form__group">
