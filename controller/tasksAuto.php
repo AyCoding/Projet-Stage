@@ -62,6 +62,7 @@ $data = $result->fetchAll();
             </form>
         </div>
     </div>
+</div>
 
 <?php endforeach ?>
 
