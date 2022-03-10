@@ -30,7 +30,7 @@ $data = $result->fetchAll();
                 <h4>
                     <?= $value['task']; ?>
                     <div>
-                        <input type="checkbox" name="check" id="checkbox">
+                        <input type="checkbox" name="check[]" id="checkbox" value="value1">
 
                         <svg class="delete" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
                              height="24">
@@ -42,8 +42,7 @@ $data = $result->fetchAll();
                 <h4>
                     <?= $value['task1']; ?>
                     <div>
-                        <!--                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm1 2v14h14V5H5z"/></svg>-->
-                        <input type="checkbox" name="check" id="checkbox">
+                        <input type="checkbox" name="check[]" id="checkbox">
 
                         <svg class="delete" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
                              height="24">
@@ -53,11 +52,9 @@ $data = $result->fetchAll();
                     </div>
                 </h4>
                 <div class="form__task">
-                    <!--<label for=""></label>-->
                     <input type="text" name="task" id="task" placeholder="Nom d'un tâches">
                     <div class="task__adds">
-                        <button type="submit">Ajouter tâches</button>
-                        <!--                            <h4>Ajouter tâches</h4>-->
+                        <button type="submit">Mettre à jour</button>
                     </div>
             </form>
         </div>

@@ -14,20 +14,6 @@ function toggleTask() {
         })
 
     }
-    // ForEach pour chaque ".title_task"
-    // Dans ".title_task" supprime la ligne voulue
-    // const removeTask = document.querySelectorAll('.delete');
-
-    // title.forEach(element => {
-    //     console.log(element);
-    //     const oktest = document.querySelector('.delete');
-    //     for (let d = 0; d < removeTask.length; d++) {
-    //         removeTask[d].addEventListener('click', () => {
-    //             console.log("test");
-    //         })
-    // };
-    // })
-
 }
 
 toggleTask();

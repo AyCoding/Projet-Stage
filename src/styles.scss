@@ -97,7 +97,7 @@ header {
     padding: 25px 0;
     background-color: #fddfdf;
     display: none;
-    height: calc(100% + 20vh);
+    height: auto;
 
     &:nth-child(2) {
       background-color: rgba(blue, .5);
@@ -113,13 +113,10 @@ header {
 
 
 .title {
-  position: relative;
   width: 80%;
-  margin: auto;
-  margin-bottom: 50px;
+  margin: 25px auto;
 
   .title__task {
-    position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -146,8 +143,9 @@ header {
   border-radius: 10px;
   width: 100%;
   margin-bottom: $line-height;
-  padding: 20px;
-  padding-left: 10px;
+  //padding: 20px;
+  //padding-left: 10px;
+  padding: 10px 0 10px 10px;
   display: none;
   color: $grey;
 
@@ -166,18 +164,22 @@ header {
 
 .title__wrapper {
   display: block;
-  position: absolute;
+  //position: absolute;
   transform-origin: top;
   transform: scaleY(0);
+  //transform: translateY(0);
   opacity: 0;
-  transition: 1.2s;
+  transition: transform 1.2s;
   z-index: 1;
+  height: 0;
 
   &.active {
     transform-origin: top;
     opacity: 1;
+    height: auto;
     transform: scaleY(1);
-    transition: 1s ease;
+    //transform: translateY(0);
+    transition: transform 1.5s ease;
     z-index: 1000;
     box-shadow: 0 0 4px rgba(black, .25);
   }
@@ -203,7 +205,7 @@ header {
   }
 }
 
-//Bouton cliquable pour ajouter un projet
+// Bouton cliquable pour ajouter un projet
 .add__project {
   display: flex;
   justify-content: center;
