@@ -325,6 +325,13 @@ header nav ul {
   color: #FDFDFD;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  border: 2px solid #004447;
+}
+.title__wrapper .task__adds:hover {
+  transition: 0.1s;
+  background-color: #FDFDFD;
+  border: 2px solid #004447;
+  color: #004447;
 }
 
 .title__wrapper {

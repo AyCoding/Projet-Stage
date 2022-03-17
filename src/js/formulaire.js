@@ -1,9 +1,5 @@
 let xhr = new XMLHttpRequest();
 
-// xhr.onreadystatechange = function () {
-//     console.log(this.responseText);
-// }
-
 xhr.onload = function () {
     console.log(this.responseText);
 }
