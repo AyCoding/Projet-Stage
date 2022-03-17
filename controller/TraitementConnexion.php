@@ -26,7 +26,9 @@ if (isset($_POST['submit'])) {
 
             exit();
         } else {
-            $error = "Identifiants incorrects !";
+            $error = "Mot de passe incorrects !";
         }
+    } else {
+        $error = "Adresse email incorrects ! ";
     }
 }

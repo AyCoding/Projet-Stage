@@ -14,20 +14,25 @@ if (isset($_POST['submit'])) {
     $result = $db->prepare($sql);
     $result->execute();
 
-
-    if ($pass === $passConfirm) {
-
-        $pass = password_hash($pass, PASSWORD_DEFAULT);
-        $sql = "INSERT INTO user (email, password) VALUES ('$email','$pass')";
-        $req = $db->prepare($sql);
-        $req->execute();
-        echo "Enregistrement effectuée";
-
-        $_SESSION['email'] = $email;
-
-        $_SESSION['connecte'] = true;
-        header('Location: /');
+    $data = $result->fetchAll();
+    if ($email === $data[0]["email"]) {
+        $error = "L'adresse email est déjà utilisée !";
     } else {
-        $error = "Le mot de passe n'est pas identique !";
+
+        if ($pass === $passConfirm) {
+
+            $pass = password_hash($pass, PASSWORD_DEFAULT);
+            $sql = "INSERT INTO user (email, password) VALUES ('$email','$pass')";
+            $req = $db->prepare($sql);
+            $req->execute();
+            echo "Enregistrement effectuée";
+
+            $_SESSION['email'] = $email;
+
+            $_SESSION['connecte'] = true;
+            header('Location: /');
+        } else {
+            $error = "Le mot de passe n'est pas identique !";
+        }
     }
 }

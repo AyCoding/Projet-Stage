@@ -1,7 +1,13 @@
-let httpRequest = new XMLHttpRequest();
+let xhr = new XMLHttpRequest();
 
-httpRequest.onreadystatechange = function() {
-    // instructions de traitement de la réponse
-    httpRequest.open('GET', 'http://www.example.org/some.file', true);
-    httpRequest.send();
-};
+// xhr.onreadystatechange = function () {
+//     console.log(this.responseText);
+// }
+
+xhr.onload = function () {
+    console.log(this.responseText);
+}
+
+xhr.open("GET", "run.bat", true);
+xhr.responseType = "text";
+xhr.send();

@@ -25,8 +25,8 @@
 
    <style>
        :root {
-           --white: #222831;
-           --black: #FDFDFD;
+           --white: #FDFDFD;
+           --black: #222831;
        }
        .modal {
            position: fixed;
@@ -59,7 +59,7 @@
        }
 
        aside {
-           background-color: var(--black);
+           background-color: var(--white);
            width: 10%;
            border-radius: 0 50px 50px 0;
            height: 100px;
@@ -72,11 +72,11 @@
            width: 100%;
            margin-bottom: -5px;
            margin-left: -5px;
-           fill: var(--white);
+           fill: var(--black);
        }
 
        aside svg:hover {
-           fill: var(--black);
+           fill: var(--white);
            transition: .3s;
        }
 
@@ -94,15 +94,15 @@
        }
 
        .form__group input {
-           border: 2px solid var(--white);
+           border: 2px solid var(--black);
            width: 100%;
-           color: var(--white);
+           color: var(--black);
        }
 
        .form__last button {
            width: 100%;
-           background-color: var(--white);
-           color: var(--black);
+           background-color: var(--black);
+           color: var(--white);
            display: flex;
            justify-content: center;
            font-size: 20px;
@@ -110,22 +110,22 @@
        }
 
        .form__last:hover button {
-           background-color: var(--black);
-           color: var(--white);
+           background-color: var(--white);
+           color: var(--black);
            transition: .3s;
        }
 
        input::placeholder {
-           color: var(--white);
+           color: var(--black);
        }
 
        .modal__content {
-           border: 5px solid black;
+           border: 2px solid black;
        }
 
        aside {
-           border-top: 5px solid black;
-           border-bottom: 5px solid black;
-           border-right: 5px solid black;
+           border-top: 2px solid black;
+           border-bottom: 2px solid black;
+           border-right: 2px solid black;
        }
    </style>

@@ -144,6 +144,7 @@ h3 {
 }
 .login__form h1 {
   margin-bottom: 30px;
+  text-align: center;
 }
 .login__form label {
   font-size: 20px;
@@ -340,7 +341,7 @@ header nav ul {
   opacity: 1;
   height: auto;
   transform: scaleY(1);
-  transition: transform 1.5s ease;
+  transition: transform 1.5s;
   z-index: 1000;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
 }
@@ -367,17 +368,20 @@ header nav ul {
   justify-content: center;
   align-items: center;
   margin: auto;
+  padding: 30px;
   width: 50%;
   height: 50px;
   background-color: #004447;
   color: #FDFDFD;
   cursor: pointer;
   border-radius: 4px;
+  border: 2px solid #004447;
 }
-.add__project .add_project:hover {
-  transition: 0.3s;
-  background-color: #c80000;
-  cursor: pointer;
+.add__project:hover {
+  transition: 0.1s;
+  background-color: #FDFDFD;
+  border: 2px solid #004447;
+  color: #004447;
 }
 
 footer {

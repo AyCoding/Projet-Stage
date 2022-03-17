@@ -21,8 +21,9 @@ est_connecte();
             <?= require("view/tasks.php") ?>
             <?= require("view/modal.php") ?>
             <?php endif ?>
-            
+
     <script src="src/js/app.js"></script>
+        <script src="src/js/formulaire.js"></script>
 
     </body>
 </html>

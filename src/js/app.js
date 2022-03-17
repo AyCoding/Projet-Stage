@@ -63,4 +63,4 @@ function addTasks() {
 addTasks();
 
 const removeTask = document.querySelectorAll('.delete');
-console.log(removeTask);
+// console.log(removeTask);

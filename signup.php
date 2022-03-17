@@ -14,7 +14,7 @@
 <body>
 
 <div class="login__form">
-    <h1>Se Connecter
+    <h1>S'inscire
         <img src="assets/ardenne.png" alt="">
     </h1>
 

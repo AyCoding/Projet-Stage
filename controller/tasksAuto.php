@@ -26,11 +26,11 @@ $data = $result->fetchAll();
 
         </h3>
         <div class="title__wrapper">
-            <form action="" method="post">
+            <form action="" method="POST" name="task-form">
                 <h4>
                     <?= $value['task']; ?>
                     <div>
-                        <input type="checkbox" name="check[]" id="checkbox" value="value1">
+                        <input type="checkbox" name="check" id="checkbox">
 
                         <svg class="delete" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
                              height="24">
@@ -42,7 +42,7 @@ $data = $result->fetchAll();
                 <h4>
                     <?= $value['task1']; ?>
                     <div>
-                        <input type="checkbox" name="check[]" id="checkbox">
+                        <input type="checkbox" name="check" id="checkbox">
 
                         <svg class="delete" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
                              height="24">
