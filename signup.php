@@ -14,7 +14,7 @@
 
 <div class="login__form">
     <h1>S'inscire
-        <img src="assets/ardenne.png" alt="">
+        <!--<img src="assets/ardenne.png" alt="">-->
     </h1>
 
     <form name="signup" method="POST" action="signup.php">

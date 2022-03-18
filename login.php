@@ -15,7 +15,7 @@
 
 <div class="login__form">
     <h1>Se Connecter
-        <img src="assets/ardenne.png" alt="">
+        <!--<img src="assets/ardenne.png" alt="">-->
     </h1>
 
     <form method="POST" action="login.php">
