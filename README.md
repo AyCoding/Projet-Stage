@@ -1,13 +1,19 @@
 # Project Manager
-<br>
 
-## Genèse du projet
-
-Gestionnaire de projet développer à l'origine pour ***<a href="https://ardenne-metropole.fr/" target="_blank">Ardennes Métropole</a>***
+## Gestionnaire de projet développer en **PHP**
 
 > ### **<a href="https://www.figma.com/file/oSWA3gCNDMyTJ59TfVZReQ/Maquette-Projet-Stage?node-id=18%3A2" target="_blank">Maquette du projet</a>**
-___
+---
 
+Aménagement des dossiers
+---
+
+* **assets** : toutes les images
+* **controller** : tous les programmes de contrôle
+* **src** : toutes les sources hors **PHP**
+* **view** : toutes les vues
+
+___
 
 ## Langages utilisée
 
