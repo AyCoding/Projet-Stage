@@ -107,12 +107,14 @@
            justify-content: center;
            font-size: 20px;
            font-weight: 700;
+           border: 2px solid var(--black)
        }
 
        .form__last:hover button {
            background-color: var(--white);
            color: var(--black);
-           transition: .3s;
+           border: 2px solid var(--black);
+           transition: .1s;
        }
 
        input::placeholder {
