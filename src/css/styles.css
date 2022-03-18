@@ -8,10 +8,10 @@
 /*─────────────────────────────────────────────────────────────────────────────────────────────────*/
 /*─────────────────────────────────────────────────────────────────────────────────────────────────*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 * {
   box-sizing: border-box;
@@ -130,6 +130,7 @@ h3 {
   font-size: 20px;
 }
 
+/* Login FORM */
 .login__form {
   width: auto;
   height: auto;
@@ -137,7 +138,8 @@ h3 {
   margin: auto;
   padding: 5%;
   background-color: #FDFDFD;
-  border-radius: 10px;
+  border-radius: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
 }
 .login__form img {
   width: 300px;
@@ -164,7 +166,6 @@ h3 {
 .login__form form #submit {
   background-color: #333;
   color: #FDFDFD;
-  margin-top: 2em;
   width: 100%;
   margin: 10px 0;
   border: 1px solid rgba(51, 51, 51, 0.5);
@@ -240,17 +241,20 @@ header nav ul {
 /* HEADER */
 .hero {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
   margin: 20px 0;
   line-height: 1.5;
-}
-.hero img {
-  margin-bottom: 20px;
+  height: 100px;
+  text-transform: uppercase;
 }
 
 /* HEADER PROJECT */
+.header__task {
+  margin-top: 100px;
+}
 .header__task .header__title {
   display: flex;
 }
@@ -353,6 +357,7 @@ header nav ul {
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
 }
 
+/* PROGRESS LINE */
 .line {
   position: relative;
 }
@@ -370,6 +375,7 @@ header nav ul {
   height: 10px;
 }
 
+/* Bouton cliquable pour ajouter un projet */
 .add__project {
   display: flex;
   justify-content: center;
@@ -399,18 +405,42 @@ footer {
   background-color: #333;
   color: #FFF;
   font-weight: 700;
+  letter-spacing: 1.2px;
   position: absolute;
   width: 100%;
   bottom: 0;
-}
-footer i {
-  color: orange;
-  font-weight: 900;
-  letter-spacing: 0.5px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .modal {
   z-index: 9999;
+}
+
+/* Non connecter */
+.no-co {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.no-co * {
+  margin-bottom: 10px;
+}
+.no-co a {
+  margin: 10px;
+  padding: 15px;
+  border: 2px solid #222831;
+  border-radius: 4px;
+  background: #222831;
+  color: #FDFDFD;
+  transition: 0.1s;
+}
+.no-co a:hover {
+  border: 2px solid #222831;
+  color: #222831;
+  background: #FDFDFD;
+  border-radius: 4px;
+  transition: 0.1s;
 }
 
 /*# sourceMappingURL=styles.css.map */

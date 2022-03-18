@@ -1,3 +1,3 @@
 <footer>
-        <p>Développé par <i>Aymeric DE LANGE</i> pour <i>Ardenne Métropole</i></p>
+        <p>Aymeric DE LANGE &copy; 2022</p>
     </footer>

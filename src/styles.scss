@@ -50,24 +50,25 @@ header {
     }
   }
 }
+
 /* HEADER */
 
 
 .hero {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
   margin: 20px 0;
   line-height: 1.5;
-
-  img {
-    margin-bottom: 20px;
-  }
+  height: 100px;
+  text-transform: uppercase;
 }
 
 /* HEADER PROJECT */
 .header__task {
+  margin-top: 100px;
 
   .header__title {
     display: flex;
@@ -142,8 +143,6 @@ header {
   border-radius: 10px;
   width: 100%;
   margin-bottom: $line-height;
-  //padding: 20px;
-  //padding-left: 10px;
   padding: 10px 0 10px 10px;
   display: none;
   color: $grey;
@@ -189,7 +188,7 @@ header {
   }
 }
 
-// PROGRESS LINE
+/* PROGRESS LINE */
 .line {
   position: relative;
 
@@ -209,7 +208,7 @@ header {
   }
 }
 
-// Bouton cliquable pour ajouter un projet
+/* Bouton cliquable pour ajouter un projet */
 .add__project {
   display: flex;
   justify-content: center;
@@ -241,18 +240,45 @@ footer {
   background-color: #333;
   color: #FFF;
   font-weight: 700;
-
-  i {
-    color: orange;
-    font-weight: 900;
-    letter-spacing: .5px;
-  }
+  letter-spacing: 1.2px;
 
   position: absolute;
   width: 100%;
   bottom: 0;
+
+  font-family: 'Montserrat', sans-serif;
 }
 
 .modal {
   z-index: 9999;
+}
+
+/* Non connecter */
+.no-co {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  * {
+    margin-bottom: 10px;
+  }
+
+  a {
+    margin: 10px;
+    padding: 15px;
+    border: 2px solid $black;
+    border-radius: 4px;
+    background: $black;
+    color: $white;
+    transition: .1s;
+  }
+
+  a:hover {
+    border: 2px solid $black;
+    color: $black;
+    background: $white;
+    border-radius: 4px;
+    transition: .1s;
+  }
 }
