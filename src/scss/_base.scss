@@ -1,0 +1,31 @@
+//Montserrat Font
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap');
+
+//Fredoka Font
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;700;900&display=swap');
+
+//DM Sans Font
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+$black: #222831;
+$grey: #393E46;
+$blue: #004447;
+$white: #FDFDFD;
+
+body {
+  font-size: 16px;
+  //font-family: 'Montserrat', sans-serif;
+  font-family: 'DM Sans', sans-serif;
+  color: $black;
+}
+
+h1,
+h2,
+h3{
+    font-weight: 900;
+    letter-spacing: .8px;
+}
+
+h1{font-size: 40px;}
+h2{font-size: 30px;}
+h3{font-size: 20px;}
